@@ -5,14 +5,14 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Intro1 from '../assets/images/Intro1.png';
 import Intro2 from '../assets/images/Intro2.png';
+import '../assets/css/ImageBlock.css';
 
 function ImageBlock() {
   return (
-    <Container>
+    <Container className="image-block-container">
     <Row>
-      <Col><RoundedImage img={Intro1} /></Col>
-      <Col><RoundedImage img={Intro2} /></Col>
-
+      <Col className='Intro1'><RoundedImage img={Intro1} /></Col>
+      <Col className='Intro2'><RoundedImage img={Intro2} /></Col> 
     </Row>
   </Container>
   )
