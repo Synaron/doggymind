@@ -1,15 +1,18 @@
 import './App.css';
 import Slider from "./components/Slider";
 import Intro from "./components/Intro";
-import ProblemCards from "./components/ProblemCards"
-
+import Probleme from './components/Probleme';
+import AngeboteCards from "./components/AngeboteCards"
+import FAQ from './components/FAQ';
 
 function App() {
   return (
     <div className="App">
         <Slider />
         <Intro />
-        <ProblemCards />
+        <Probleme />
+        <AngeboteCards />
+        <FAQ />
     </div>
   );
 }

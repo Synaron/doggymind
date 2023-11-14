@@ -1,12 +1,13 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import '../assets/css/ProblemCards.css';
+import '../assets/css/AngeboteCards.css';
 import Row from 'react-bootstrap/esm/Row';
 
-function ProblemCards() {
+function AngeboteCards() {
   return (
     <div className='card-background'>
+    <h1>Was ich anbiete</h1>
     <Row>
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="holder.js/100px180" />
@@ -103,4 +104,4 @@ function ProblemCards() {
   );
 }
 
-export default ProblemCards;
+export default AngeboteCards;
