@@ -2,8 +2,7 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Intro1 from '../assets/images/Intro1.png';
-import Intro2 from '../assets/images/Intro2.png';
+import ImageBlock from './ImageBlock';
 
 function Intro() {
   return (
@@ -19,15 +18,12 @@ function Intro() {
         jeder Hund ist, so auch der Trainingsansatz. Gemeinsam finden wir den passenden Weg für euch.</p>
       </Col>
       <Col>
-        <img src={Intro1} alt="HundeTraining1" />
-        <img src={Intro2} alt="HundeTraining2" />
+        <ImageBlock />
       </Col>
       </Row>
     
   </Container>
 
-       
-   
   )
 }
 
