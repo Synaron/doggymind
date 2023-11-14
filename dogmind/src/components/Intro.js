@@ -9,7 +9,7 @@ function Intro() {
     <Container fluid>
     <Row style={{ display: 'flex', alignItems: 'stretch' }}>
       <Col className='intro-text-block' md={5}>
-      <h1>Dog my mind – mind my dog</h1>
+      <h1>Dog <span style={{ color: '#F6BE00' }}>mind</span> – mind my dog</h1>
         <p>Die Hundesprache verstehen und deuten zu können, ist wie eine neue Fremdsprache zu lernen. 
             Nur durch viel Übung und Anwendung zu meistern. Ich helfe dir und deinem besten Freund, 
             eure Kommunikation und somit eure Bindung zusätzlich zu stärken.</p>

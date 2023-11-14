@@ -4,6 +4,8 @@ import Slider1 from '../assets/images/Slider1.png';
 import Slider2 from '../assets/images/Slider2.png';
 import Slider3 from '../assets/images/Slider3.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../assets/css/Slider.css';
+
 
 
 function Slider() {
@@ -16,25 +18,25 @@ function Slider() {
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
-        <img className="d-block h-100" src={Slider1} alt="First slide" />
+        <img className="d-block w-100" src={Slider1} alt="First slide" />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Individualtraining</h3>
+          <p>Das Hundetraining wird an eure Voraussetzungen und Wünsche angepasst.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block h-100" src={Slider2} alt="Second slide" />
+        <img className="d-block w-100" src={Slider2} alt="Second slide" />
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Alltagstauglichkeit für Jung und Alt</h3>
+          <p>Damit ihr Alltagssituation entspannt meistern könnt.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img className="d-block w-100" src={Slider3} alt="Third slide" />
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h3>Spiel und Beschäftigung</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          Die ideale Beschäftigung für dich und deinen Hund finden.
           </p>
         </Carousel.Caption>
       </Carousel.Item>
