@@ -1,6 +1,7 @@
 import './App.css';
 import Slider from "./components/Slider";
 import Intro from "./components/Intro";
+import ProblemCards from "./components/ProblemCards"
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
         <Slider />
         <Intro />
+        <ProblemCards />
     </div>
   );
 }
