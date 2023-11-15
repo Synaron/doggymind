@@ -3,6 +3,10 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import '../assets/css/AngeboteCards.css';
 import Row from 'react-bootstrap/esm/Row';
+import Welpe1 from '../assets/images/Welpe1.png';
+import Welpe2 from '../assets/images/Welpe2.png';
+import Alltagstauglich from '../assets/images/Alltagstauglich.jpeg';
+
 
 function AngeboteCards() {
   return (
@@ -10,47 +14,63 @@ function AngeboteCards() {
     <h1>Was ich anbiete</h1>
     <Row>
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <img src={Welpe1} alt="Welpentraining" />
       <Card.Body>
-        <Card.Title>Leinenführung</Card.Title>
+        <Card.Title>Welpen-/ Junghundtraining:</Card.Title>
         <Card.Text>
-        Du kannst deine Spaziergänge nicht mehr genießen, weil dein Hund…
-        ständig an der Leine zieht?
+        Wir legen miteinander den richtigen Grundstein in der wichtigsten Entwicklungsphase.
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary">Mehr erfahren</Button>
+      </Card.Body>
+    </Card>
+    <Card style={{ width: '18rem' }}>
+    <img src={Welpe2} alt="Welpen Gruppenkurs" />
+      <Card.Body>
+        <Card.Title>Welpen Gruppenkurs:</Card.Title>
+        <Card.Text>
+        Sozialisierung mit Hunden, Menschen, Umgebungen, Geräuschen und vieles mehr.
+        </Card.Text>
+        <Button variant="primary">Mehr erfahren</Button>
+      </Card.Body>
+    </Card>
+    <Card style={{ width: '18rem' }}>
+    <img src={Alltagstauglich} alt="Alltagstauglich" />
+      <Card.Body>
+        <Card.Title>Alltagstauglichkeit für Jung und Alt:</Card.Title>
+        <Card.Text>
+        Jede erdenkliche Alltagssituation so entspannt als möglich meistern.
+        </Card.Text>
+        <Button variant="primary">Mehr erfahren</Button>
       </Card.Body>
     </Card>
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Medical Training:</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        Tierarztbesuche und Medikamentenverabreichung trainieren, für stressfreie Behandlungen.
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary">Mehr erfahren</Button>
       </Card.Body>
     </Card>
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Verhaltensauffälligkeiten:</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        Unerwünschtes Verhalten durch Training gezielt korrigieren.
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary">Mehr erfahren</Button>
       </Card.Body>
     </Card>
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Training Kind mit Hund:</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        Ziel ist es, eurem Nachwuchs die grundlegende Kommunikation mit eurem Fellknäuel beizubringen.
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary">Mehr erfahren</Button>
       </Card.Body>
     </Card>
     </Row>
@@ -58,45 +78,61 @@ function AngeboteCards() {
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Hunde mit Handicap:</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        Auch Hunde mit Behinderung wollen und brauchen Erziehung und Beschäftigung.
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary">Mehr erfahren</Button>
       </Card.Body>
     </Card>
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Spaziergang mit dem Hund:</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          Wenn zum Gassi-Gehen mal keine Zeit bleibt, gehe gerne ich eine Runde mit deiner Fellnase spazieren.
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary">Mehr erfahren</Button>
       </Card.Body>
     </Card>
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Anschaffungsberatung:</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          Ein Hund ist eine große Verantwortung. Entsprechend wohl überlegt sollte eine Anschaffung sein. Ich berate dich gerne.
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary">Mehr erfahren</Button>
       </Card.Body>
     </Card>
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Anti- Jagd- Training:</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        Der Jagdtrieb deines Hundes bringt dich zur Verzweiflung? Kein Problem, Für Anti-Jagd-Training ist es nie zu spät.
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary">Mehr erfahren</Button>
+      </Card.Body>
+    </Card>
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Body>
+        <Card.Title>Social Walk:</Card.Title>
+        <Card.Text>
+        Unter kontrollierten Bedingungen und Anleitung eines Trainers auf Artgenossen und Menschen treffen und Begegnungen trainieren.
+        </Card.Text>
+        <Button variant="primary">Mehr erfahren</Button>
+      </Card.Body>
+    </Card>
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Body>
+        <Card.Title>Faszienmassage:</Card.Title>
+        <Card.Text>
+        Durch Massage Faszien lockern und schmerzfreie Mobilität unterstützen.
+        </Card.Text>
+        <Button variant="primary">Mehr erfahren</Button>
       </Card.Body>
     </Card>
     </Row>

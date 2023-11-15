@@ -1,0 +1,28 @@
+.left-block{
+    background-color: black;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    padding: 5%;
+}
+
+.right-block{
+    background-color: rgb(246,190,0, 0.7);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    padding: 5%;
+}
+
+.Liste {
+    margin: 5%;
+}
+
+.Liste li {
+    font-size: 1 rem;
+    text-align: justify;
+    padding-top: 5%;
+}

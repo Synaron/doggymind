@@ -9,7 +9,7 @@
   }
   
   .rounded-image {
-    width: 200px; /* Make sure the image takes the full width of the container */
+    width: 250px; /* Make sure the image takes the full width of the container */
     height: auto; /* Maintain the aspect ratio */
   }
   

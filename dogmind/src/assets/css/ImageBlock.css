@@ -5,6 +5,8 @@
     justify-content: center;
     height: 100%;
     width: auto;
+    padding: 2rem;
+    margin:0;
   }
 
   .intro-text-block {

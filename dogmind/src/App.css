@@ -7,9 +7,14 @@ h1 {
   text-transform: uppercase;
 }
 
+h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  }
+
 p {
   font-family: 'Hanken Grotesk', sans-serif;
   font-size: 1rem;
-  text-align: justify;
+  text-align:justify;
 
 }
