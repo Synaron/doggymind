@@ -3,18 +3,26 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import '../assets/css/AngeboteCards.css';
 import Row from 'react-bootstrap/esm/Row';
-import Welpe1 from '../assets/images/Welpe1.png';
+import welpe11 from '../assets/images/welpe11.png';
 import Welpe2 from '../assets/images/Welpe2.png';
-import Alltagstauglich from '../assets/images/Alltagstauglich.jpeg';
-
+import Alltagstauglich from '../assets/images/Alltagstauglich.png';
+import MedicalTraining from '../assets/images/MedicalTraining.png';
+import verhalten from '../assets/images/verhalten.png';
+import socialwalk from '../assets/images/socialwalk.png';
+import antijagd from '../assets/images/antijagd.png';
+import spaziergang from '../assets/images/spaziergang.png';
+import hundkind from '../assets/images/hundkind.png';
+import hundmithandicap from '../assets/images/hundmithandicap.png';
+import faszien from '../assets/images/faszien.png';
+import anschaffung from '../assets/images/anschaffung.png'
 
 function AngeboteCards() {
   return (
     <div className='card-background'>
     <h1>Was ich anbiete</h1>
     <Row>
-    <Card style={{ width: '18rem' }}>
-      <img src={Welpe1} alt="Welpentraining" />
+    <Card className='odd-card' style={{ width: '18rem' }}>
+      <img src={welpe11} alt="Welpentraining" />
       <Card.Body>
         <Card.Title>Welpen-/ Junghundtraining:</Card.Title>
         <Card.Text>
@@ -23,7 +31,7 @@ function AngeboteCards() {
         <Button variant="primary">Mehr erfahren</Button>
       </Card.Body>
     </Card>
-    <Card style={{ width: '18rem' }}>
+    <Card className='even-card' style={{ width: '18rem' }}>
     <img src={Welpe2} alt="Welpen Gruppenkurs" />
       <Card.Body>
         <Card.Title>Welpen Gruppenkurs:</Card.Title>
@@ -33,7 +41,7 @@ function AngeboteCards() {
         <Button variant="primary">Mehr erfahren</Button>
       </Card.Body>
     </Card>
-    <Card style={{ width: '18rem' }}>
+    <Card className='odd-card' style={{ width: '18rem' }}>
     <img src={Alltagstauglich} alt="Alltagstauglich" />
       <Card.Body>
         <Card.Title>Alltagstauglichkeit für Jung und Alt:</Card.Title>
@@ -43,8 +51,8 @@ function AngeboteCards() {
         <Button variant="primary">Mehr erfahren</Button>
       </Card.Body>
     </Card>
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+    <Card className='even-card' style={{ width: '18rem' }}>
+      <img src={MedicalTraining} alt="MedicalTraining" />
       <Card.Body>
         <Card.Title>Medical Training:</Card.Title>
         <Card.Text>
@@ -53,8 +61,8 @@ function AngeboteCards() {
         <Button variant="primary">Mehr erfahren</Button>
       </Card.Body>
     </Card>
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+    <Card className='odd-card' style={{ width: '18rem' }}>
+    <img src={verhalten} alt="Verhalten" />
       <Card.Body>
         <Card.Title>Verhaltensauffälligkeiten:</Card.Title>
         <Card.Text>
@@ -63,8 +71,8 @@ function AngeboteCards() {
         <Button variant="primary">Mehr erfahren</Button>
       </Card.Body>
     </Card>
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+    <Card className='even-card' style={{ width: '18rem' }}>
+      <img src={hundkind} alt="Alltagstauglich" />
       <Card.Body>
         <Card.Title>Training Kind mit Hund:</Card.Title>
         <Card.Text>
@@ -75,8 +83,8 @@ function AngeboteCards() {
     </Card>
     </Row>
     <Row>
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+    <Card className='odd-card' style={{ width: '18rem' }}>
+      <img src={hundmithandicap} alt="Hund mit Handicap" />
       <Card.Body>
         <Card.Title>Hunde mit Handicap:</Card.Title>
         <Card.Text>
@@ -85,8 +93,8 @@ function AngeboteCards() {
         <Button variant="primary">Mehr erfahren</Button>
       </Card.Body>
     </Card>
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+    <Card className='even-card' style={{ width: '18rem' }}>
+      <img src={spaziergang} alt="Spaziergang mit Hund" />
       <Card.Body>
         <Card.Title>Spaziergang mit dem Hund:</Card.Title>
         <Card.Text>
@@ -95,8 +103,8 @@ function AngeboteCards() {
         <Button variant="primary">Mehr erfahren</Button>
       </Card.Body>
     </Card>
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+    <Card className='odd-card' style={{ width: '18rem' }}>
+      <img src={anschaffung} alt="Anschaffungsberatung" />
       <Card.Body>
         <Card.Title>Anschaffungsberatung:</Card.Title>
         <Card.Text>
@@ -105,8 +113,8 @@ function AngeboteCards() {
         <Button variant="primary">Mehr erfahren</Button>
       </Card.Body>
     </Card>
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+    <Card className='even-card' style={{ width: '18rem' }}>
+      <img src={antijagd} alt="Anti-Jagd" />
       <Card.Body>
         <Card.Title>Anti- Jagd- Training:</Card.Title>
         <Card.Text>
@@ -115,8 +123,8 @@ function AngeboteCards() {
         <Button variant="primary">Mehr erfahren</Button>
       </Card.Body>
     </Card>
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+    <Card className='odd-card' style={{ width: '18rem' }}>
+      <img src={socialwalk} alt="Social Walk" />
       <Card.Body>
         <Card.Title>Social Walk:</Card.Title>
         <Card.Text>
@@ -125,8 +133,8 @@ function AngeboteCards() {
         <Button variant="primary">Mehr erfahren</Button>
       </Card.Body>
     </Card>
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+    <Card className='even-card' style={{ width: '18rem' }}>
+      <img src={faszien} alt="Faszienmassage" />
       <Card.Body>
         <Card.Title>Faszienmassage:</Card.Title>
         <Card.Text>
