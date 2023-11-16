@@ -7,7 +7,7 @@ import ImageBlock from './ImageBlock';
 function Intro() {
   return (
     <Container fluid>
-    <Row style={{ display: 'flex', alignItems: 'stretch' }}>
+    <Row style={{ display: 'flex', alignItems: 'stretch'}}>
       <Col className='intro-text-block' md={6}>
       <h1>Dog <span style={{ color: '#F6BE00' }}>mind</span> – mind my dog</h1>
         <p>Die Hundesprache verstehen und deuten zu können, ist wie eine neue Fremdsprache zu lernen. 
@@ -17,7 +17,7 @@ function Intro() {
         ihr gemeinsam effektiv und intensiv an euren Zielen arbeiten. So einzigartig wie jeder Mensch und
         jeder Hund ist, so auch der Trainingsansatz. Gemeinsam finden wir den passenden Weg für euch.</p>
       </Col>
-      <Col md={6}>
+      <Col style={{ padding: 0 }} md={6}>
         <ImageBlock />
       </Col>
       </Row>

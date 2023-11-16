@@ -1,0 +1,11 @@
+/* FAQ.css */
+
+/* Define styles for the Accordion */
+.accordion-container {
+    /* Add your styles here */
+  }
+  
+  /* Define styles for the Accordion Header with a yellow color */
+  .accordion-collapse, .accordion-button, .accordion-header, .h2.accordion-collapse {
+    color: #F6BE00;
+  }

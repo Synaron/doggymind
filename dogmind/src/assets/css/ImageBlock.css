@@ -3,20 +3,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    width: auto;
-    padding: 2rem;
-    margin:0;
+    height: auto;
+    width: 100%;
+    padding: 5%;
+    margin:0%;
   }
 
   .intro-text-block {
     padding: 5rem;
+    margin: 0;
   }
 
-  .Intro1 {
-    margin-top: 40px;
-    margin-right: 20px;
-  }
 
 
 

@@ -12,10 +12,10 @@ function Probleme() {
         <Row id="Probleme-Row">
         <Col className="left-block" md={6}>
           <Col>
-          <img src={Profil1} alt="Hundetraining" />
+          <img  src={Profil1} alt="Hundetraining" />
           </Col>
-          <Col>
-          <h2>Du kannst Spaziergänge nicht mehr genießen, weil dein Hund ...</h2>
+          <Col style={{ paddingLeft: '8%'}}>
+          <h2 style={{ fontSize: '1.5rem', textAlign:'center', paddingBottom: '5%'}}>Du kannst Spaziergänge nicht mehr genießen, weil dein Hund ...</h2>
           <ul className='Liste'>
               <li>Ständig an der Leine zieht</li>
               <li>Jeden Artgenossen begrüßen will</li>
@@ -28,8 +28,8 @@ function Probleme() {
           <Col>
           <img src={Profil2} alt="Hundetraining" />
           </Col>
-          <Col>
-          <h2>Oder du bist besorgt, weil dein Hund ...</h2>
+          <Col style={{ paddingLeft: '8%'}}>
+          <h2 style={{ fontSize: '1.5rem', textAlign:'center', paddingBottom: '5%'}}>Oder du bist besorgt, weil dein Hund ...</h2>
           <ul className='Liste'>
               <li>Nicht alleine bleiben kann</li>
               <li>Besuch verbellt</li>

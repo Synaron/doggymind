@@ -11,8 +11,8 @@ function ImageBlock() {
   return (
     <Container className="image-block-container">
     <Row>
-      <Col className='Intro1'><RoundedImage img={Intro1} /></Col>
-      <Col className='Intro2'><RoundedImage img={Intro2} /></Col> 
+      <Col><RoundedImage img={Intro1} /></Col>
+      <Col><RoundedImage img={Intro2} /></Col> 
     </Row>
   </Container>
   )

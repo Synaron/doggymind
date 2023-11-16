@@ -2,7 +2,7 @@ import './App.css';
 import Slider from "./components/Slider";
 import Intro from "./components/Intro";
 import Probleme from './components/Probleme';
-import AngeboteCards from "./components/AngeboteCards"
+import AngeboteVariante from "./components/AngeboteVariante"
 import FAQ from './components/FAQ';
 
 function App() {
@@ -11,10 +11,11 @@ function App() {
         <Slider />
         <Intro />
         <Probleme />
-        <AngeboteCards />
+        <AngeboteVariante />
         <FAQ />
     </div>
   );
 }
 
 export default App;
+

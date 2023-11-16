@@ -1,5 +1,7 @@
 import React from 'react';
 import Accordion from 'react-bootstrap/Accordion';
+import '../assets/css/FAQ.css';
+
 
 function FAQ() {
   return (
