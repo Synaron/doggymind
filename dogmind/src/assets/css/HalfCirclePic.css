@@ -1,9 +1,9 @@
 /* HalfCirclePic.css */
 .half-circle-container {
-  width: 100px; /* Adjust the width to your preference */
-  height: 100px; /* Adjust the height to your preference */
+  width: 22rem; /* Adjust the width to your preference */
+  height: 22rem; /* Adjust the height to your preference */
   background-color: blue; /* Set your desired background color */
-  border-radius: 0 0 50% 50%; /* This creates a half-circle shape */
+  border-radius: 0 50% 50% 0; /* This creates a half-circle shape */
   overflow: hidden; /* Ensure the image is clipped to the half-circle shape */
 }
 

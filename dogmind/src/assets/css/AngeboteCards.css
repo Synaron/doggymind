@@ -5,7 +5,7 @@
   }
   
   .card:nth-child(even) {
-    background-color:  rgb(246,190,0, 0.7);;
+    background-color:  rgb(246,190,0, 0.7);
     color: black;
   }
   

@@ -1,0 +1,9 @@
+#title-list {
+    font-size: 1.5rem;
+    list-style-type:none;
+    color: white;
+}
+
+#background-angebote{
+    background-color: rgb(246,190,0, 0.7);
+}
