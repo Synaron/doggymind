@@ -5,14 +5,14 @@ function HeadingIcon() {
   return (
     <div>
         <div style={{ position: 'relative', overflow: 'hidden', height: '100vh' }}>
-      <PawIcon />
+            <PawIcon />
         </div>
         <div>
             <h1>Abschnitt Heading</h1>
         </div>
         <div style={{ position: 'relative', overflow: 'hidden', height: '100vh' }}>
-      <PawIcon />
-    </div>
+            <PawIcon />
+        </div>
     </div>
   )
 }
