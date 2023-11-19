@@ -1,18 +1,18 @@
 import React from 'react'
-import Pfote from '../components/Pfote';
+import PawIcon from './PawIcon';
 
 function HeadingIcon() {
   return (
     <div>
-        <div>
-            <Pfote />
+        <div style={{ position: 'relative', overflow: 'hidden', height: '100vh' }}>
+      <PawIcon />
         </div>
         <div>
             <h1>Abschnitt Heading</h1>
         </div>
-        <div>
-            <Pfote />
-        </div>
+        <div style={{ position: 'relative', overflow: 'hidden', height: '100vh' }}>
+      <PawIcon />
+    </div>
     </div>
   )
 }

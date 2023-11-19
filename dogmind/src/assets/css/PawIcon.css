@@ -1,0 +1,13 @@
+.paw-icon {
+    position: absolute;
+    top: 50%; /* Adjust the vertical position as needed */
+    left: 0; /* Initial horizontal position at the left edge of the container */
+    animation: scrollAnimation 5s linear infinite; /* Adjust the animation duration and timing function as needed */
+  }
+  
+  @keyframes scrollAnimation {
+    to {
+      left: 100%; /* Move the paw icon to the right edge of the container */
+    }
+  }
+  
