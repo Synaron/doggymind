@@ -8,9 +8,7 @@ import Welpe2 from './assets/images/Welpe2.png';
 import MedicalTraining from './assets/images/MedicalTraining.png';
 import Anschaffung from './assets/images/anschaffung.png';
 import trainingData from './data';
-import Pfote from './components/Pfote';
-import React, { useState } from 'react';
-
+import HeadingIcon from './components/HeadingIcon';
  
 
 function App() {
@@ -25,21 +23,13 @@ function App() {
     chunkedData[chunkedData.length - 1].push(lastItem);
     }
 
-  //set paw state
-  const [left, setLeft] = useState(false);
-
-  // paw icon
-  const PfoteIcon = '../assets/images/PfoteIcon.png'; // Replace with the actual path to your paw icon
-
 
   return (
     <div className="App">
       <Slider />
       <Intro />
       <Probleme />
-      <div style={{ position: 'relative', overflow: 'hidden', height: '100vh' }}>
-        <Pfote left={left} setLeft={setLeft} />
-      </div>
+      <HeadingIcon />
       {chunkedData.map((chunk, index) => (
         <div key={index}>
           <AngeboteBlock
