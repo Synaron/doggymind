@@ -1,19 +1,39 @@
 .paw-container {
   position: relative;
-  height: 100vh; /* Adjust as needed */
+  height: 100vh;
   overflow: hidden;
 }
 
 .paw-icon {
   position: absolute;
-  top: 50%; /* Adjust the vertical position as needed */
+  top: 50%;
   left: -50px; /* Initial horizontal position, adjust based on paw print size */
   width: 50px; /* Adjust the width as needed */
   height: auto;
-  background-image: url('../images/PfoteIcon.png');
+  background-image: url('../images/PfoteIcon.png'); /* Replace with the actual path */
   background-size: cover;
   opacity: 0;
   animation: pawAnimation 0.5s ease-in-out forwards;
+}
+
+.paw-0 {
+  animation-delay: 0.5s; /* Adjust the delay for each paw */
+}
+
+.paw-1 {
+  animation-delay: 1s;
+}
+
+.paw-2 {
+  animation-delay: 1.5s;
+}
+
+.paw-3 {
+  animation-delay: 2s;
+}
+
+.paw-4 {
+  animation-delay: 2.5s;
 }
 
 @keyframes pawAnimation {
