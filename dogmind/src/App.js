@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import Slider from "./components/Slider";
 import Intro from "./components/Intro";
@@ -9,6 +8,8 @@ import Welpe2 from './assets/images/Welpe2.png';
 import MedicalTraining from './assets/images/MedicalTraining.png';
 import Anschaffung from './assets/images/anschaffung.png';
 import trainingData from './data';
+import Pfoten from './components/Pfoten';
+import React, { useState } from 'react';
 
 function App() {
   // Split the trainingData into chunks of 6 for each AngeboteBlock
@@ -22,12 +23,17 @@ function App() {
     chunkedData[chunkedData.length - 1].push(lastItem);
     }
 
+  //set paw state
+  const [left, setLeft] = useState(false);
+
   return (
     <div className="App">
       <Slider />
       <Intro />
       <Probleme />
-
+      <div style={{ position: 'relative', overflow: 'hidden', height: '100vh' }}>
+        <Pfoten />
+      </div>
       {chunkedData.map((chunk, index) => (
         <div key={index}>
           <AngeboteBlock
