@@ -1,28 +1,25 @@
-// Paw.js
-import React from 'react';
-import { useSpring, animated } from 'react-spring';
+import React from "react";
+import { motion } from "framer-motion";
+import { useScroll } from "react-use-gesture";
+import PfoteIcon from "../assets/images/PfoteIcon.png"; // Replace with the actual path to your paw icon
 
-const Pfote = ({ left, setLeft, PfoteIcon }) => {
-  const props = useSpring({
-    from: { transform: 'translateX(0%)', bottom: '20px' },
-    to: { transform: 'translateX(100%)', bottom: '30px' },
-    reset: true,
-    reverse: left, // Reverse animation based on the 'left' state
-    onRest: () => setLeft(!left),
-  });
+const Pfote = () => {
+  const { y } = useScroll();
 
   return (
-    <animated.div
-      style={{
-        position: 'absolute',
-        height: '50px',
-        width: '50px',
-        backgroundImage: `url(${PfoteIcon})`, // Use the paw icon as the background image
-        backgroundSize: 'cover',
-        borderRadius: '50%',
-        ...props,
-      }}
-    />
+    <div style={{ height: "50px" }}>
+      <motion.img
+        src={PfoteIcon}
+        alt="Pfote Icon"
+        style={{
+          width: "50px",
+          height: "50px",
+          borderRadius: "50%",
+        }}
+        animate={{ x: y }}
+        transition={{ duration: 0.1, ease: "linear" }}
+      />
+    </div>
   );
 };
 
