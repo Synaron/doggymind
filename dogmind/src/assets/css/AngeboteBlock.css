@@ -2,8 +2,28 @@
     font-size: 1.5rem;
     list-style-type:none;
     color: black;
+    display: flex;
+    flex-direction: column; /* Align items horizontally */
+    align-items: flex-end; /* Center items vertically */
+    justify-content: flex-end; /* Center items horizontally */
+    padding-top: 3rem;
+}
+
+#title-list-reverse {
+    color:rgb(246,190,0, 0.7);
+    font-size: 1.5rem;
+    list-style-type:none;
+    display: flex;
+    flex-direction: column; /* Align items horizontally */
+    align-items: flex-start; /* Center items vertically */
+    justify-content: flex-start; /* Center items horizontally */
+    padding-top: 3rem;
 }
 
 #background-angebote{
     background-color: rgb(246,190,0, 0.7);
+}
+
+#background-angebote-reverse{
+    background-color: black;
 }

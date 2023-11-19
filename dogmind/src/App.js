@@ -29,13 +29,15 @@ function App() {
       <Probleme />
 
       {chunkedData.map((chunk, index) => (
-        <AngeboteBlock
-          key={index}
-          imageUrl={index % 2 === 0 ? Welpe2 : index === 2 ? Anschaffung : MedicalTraining}
-          data={chunk}
-          isFirstBlock={index === 0} // Pass isFirstBlock prop
-          index={index} // Pass the index prop
-        />
+        <div key={index}>
+          <AngeboteBlock
+            imageUrl={index % 2 === 0 ? Welpe2 : index === 2 ? Anschaffung : MedicalTraining}
+            data={chunk}
+            isFirstBlock={index === 0}
+            index={index}
+          />
+          {index < chunkedData.length - 1 && <div style={{ marginBottom: '20px' }}></div>}
+        </div>
       ))}
 
       <FAQ />

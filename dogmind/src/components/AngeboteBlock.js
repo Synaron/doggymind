@@ -22,17 +22,17 @@ function AngeboteBlock({ imageUrl, data, index }) {
                 ))}
               </ul>
             </Col>
-            <Col md={4}>
+            <Col md={4} className={`ml-auto ${shouldReverse ? 'mr-0' : ''}`}>
               <HalfCirclePic imageUrl={imageUrl} shouldReverse={shouldReverse} />
             </Col>
           </>
         ) : (
           <>
-            <Col md={4}>
+              <Col md={4} className={`ml-auto ${shouldReverse ? 'mr-0' : ''}`}>
               <HalfCirclePic imageUrl={imageUrl} shouldReverse={shouldReverse} />
             </Col>
-            <Col md={8} id="background-angebote">
-              <ul id="title-list">
+            <Col md={8} id="background-angebote-reverse">
+              <ul id="title-list-reverse">
                 {titles.map((title, idx) => (
                   <li key={idx}>{title}</li>
                 ))}
