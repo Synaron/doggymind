@@ -1,0 +1,24 @@
+.paw-container {
+  position: relative;
+  height: 100vh; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.paw-icon {
+  position: absolute;
+  top: 50%; /* Adjust the vertical position as needed */
+  left: -50px; /* Initial horizontal position, adjust based on paw print size */
+  width: 50px; /* Adjust the width as needed */
+  height: auto;
+  background-image: url('../images/PfoteIcon.png');
+  background-size: cover;
+  opacity: 0;
+  animation: pawAnimation 0.5s ease-in-out forwards;
+}
+
+@keyframes pawAnimation {
+  to {
+    opacity: 1;
+    transform: translateX(100%); /* Move to the right of the container */
+  }
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import PawIcon from './PawIcon';
+import PawIcon from './PawPrints';
 
 function HeadingIcon() {
   return (
