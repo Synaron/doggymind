@@ -2,13 +2,13 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
 
-const Paw = ({ left, setLeft }) => {
+const Pfote = ({ left, setLeft, PfoteIcon }) => {
   const props = useSpring({
-    from: { transform: 'translateX(0)', bottom: '20px' },
+    from: { transform: 'translateX(0%)', bottom: '20px' },
     to: { transform: 'translateX(100%)', bottom: '30px' },
     reset: true,
-    reverse: true,
-    onRest: () => set(!left),
+    reverse: left, // Reverse animation based on the 'left' state
+    onRest: () => setLeft(!left),
   });
 
   return (
@@ -17,7 +17,8 @@ const Paw = ({ left, setLeft }) => {
         position: 'absolute',
         height: '50px',
         width: '50px',
-        backgroundColor: '#007bff', // Blue color, you can change it
+        backgroundImage: `url(${PfoteIcon})`, // Use the paw icon as the background image
+        backgroundSize: 'cover',
         borderRadius: '50%',
         ...props,
       }}
@@ -25,4 +26,4 @@ const Paw = ({ left, setLeft }) => {
   );
 };
 
-export default Paw;
+export default Pfote;
