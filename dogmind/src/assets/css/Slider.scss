@@ -1,0 +1,33 @@
+//Import Bootstrap's SCSS
+@import '~bootstrap/scss/bootstrap';
+
+.carousel-inner .carousel-item .carousel-caption {
+    background-color:rgb(246,190,0, 0.7);
+  
+}
+
+.carousel-inner .carousel-item .carousel-caption h3, p {
+    color: black;
+    text-align: center;
+}
+
+// Override Bootstrap's carousel control variables
+$carousel-control-color: black;
+$carousel-control-width: 15%;
+$carousel-control-opacity: 0.5;
+$carousel-control-hover-opacity: 0.9;
+$carousel-control-transition: opacity 0.15s ease;
+
+
+// Your additional custom styles here
+.carousel-control-prev,
+.carousel-control-next {
+  color: $carousel-control-color;
+  width: $carousel-control-width;
+  opacity: $carousel-control-opacity;
+  transition: $carousel-control-transition;
+
+  &:hover {
+    opacity: $carousel-control-hover-opacity;
+  }
+}

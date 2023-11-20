@@ -2,9 +2,17 @@
   width: 30px;
   height:auto;
   transform: rotate(90deg);
+  opacity: 0;
+  transition: opacity 0.5s ease; /* Add a transition for a smooth appearance */
 }
 
+.visible {
+  opacity: 1;
+}
 
 #pfoten .offset-row {
   transform: translateX(20px);
 }
+
+
+

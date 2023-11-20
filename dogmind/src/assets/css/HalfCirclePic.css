@@ -10,6 +10,8 @@
 .half-circle-image {
   width: 100%; /* Make the image fill the container */
   height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the container while maintaining aspect ratio */
+  object-position: center; /* Center the image within the container */
   display: block; /* Remove extra space below the image */
   margin: 0 auto; /* Center the image horizontally */
 }

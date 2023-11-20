@@ -41,7 +41,7 @@ function App() {
           {index < chunkedData.length - 1 && <div style={{ marginBottom: '20px' }}></div>}
         </div>
       ))}
-
+      <PfotenHeading title="FAQ" />
       <FAQ />
     </div>
   );

@@ -1,11 +1,15 @@
-/* FAQ.css */
+.accordion {
+  --bs-accordion-btn-bg: rgb(246,190,0,0.3);
+  --bs-accordion-color: black;
+  --bs-accordion-active-bg:  rgb(246,190,0) ;
+  --bs-accordion-active-color: black;
+  --bs-accordion-bg: rgb(246,190,0,0.7);
+  --bs-accordion-btn-focus-box-shadow:none;
+}
 
-/* Define styles for the Accordion */
-.accordion-container {
-    /* Add your styles here */
-  }
-  
-  /* Define styles for the Accordion Header with a yellow color */
-  .accordion-collapse, .accordion-button, .accordion-header, .h2.accordion-collapse {
-    color: #F6BE00;
+#FAQ {
+  margin-top: 4rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-bottom: 8rem;
   }

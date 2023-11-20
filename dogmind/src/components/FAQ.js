@@ -2,14 +2,13 @@ import React from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 import '../assets/css/FAQ.css';
 
-
 function FAQ() {
   return (
-    <div>
-    <h1>FAQ</h1>
+    <div id="FAQ-background">
+    <div id="FAQ">
     <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
-        <Accordion.Header>Was ist Individualtraining bei Dog Mind?</Accordion.Header>
+        <Accordion.Header className="accordion-header">Was ist Individualtraining bei Dog Mind?</Accordion.Header>
         <Accordion.Body>
             <ul>
                 <li>Arbeit ohne Schema F – ich schau mir eure Voraussetzungen und Wünsche an,
@@ -29,6 +28,7 @@ function FAQ() {
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
+    </div>
     </div>
   );
 }

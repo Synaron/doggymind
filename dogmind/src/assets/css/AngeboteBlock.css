@@ -9,6 +9,7 @@
     padding-top: 3rem;
 }
 
+
 #title-list-reverse {
     color:rgb(246,190,0, 0.7);
     font-size: 1.5rem;
@@ -22,6 +23,7 @@
 
 #background-angebote{
     background-color: rgb(246,190,0, 0.7);
+    text-align: center;
 }
 
 #background-angebote-reverse{
