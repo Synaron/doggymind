@@ -11,7 +11,6 @@ function AngeboteBlock({ imageUrl, data, index }) {
 
   return (
     <div>
-      {index % 2 === 0 && <h1>Mein Angebot</h1>}
       <Row>
         {index % 2 === 0 ? (
           <>

@@ -8,7 +8,7 @@ import Welpe2 from './assets/images/Welpe2.png';
 import MedicalTraining from './assets/images/MedicalTraining.png';
 import Anschaffung from './assets/images/anschaffung.png';
 import trainingData from './data';
-import HeadingIcon from './components/HeadingIcon';
+import PfotenHeading from './components/PfotenHeading';
  
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
       <Slider />
       <Intro />
       <Probleme />
-      <HeadingIcon />
+      <PfotenHeading title="Meine Angebote" />
       {chunkedData.map((chunk, index) => (
         <div key={index}>
           <AngeboteBlock

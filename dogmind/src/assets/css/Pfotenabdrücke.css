@@ -1,0 +1,10 @@
+#pfoten img {
+  width: 30px;
+  height:auto;
+  transform: rotate(90deg);
+}
+
+
+#pfoten .offset-row {
+  transform: translateX(20px);
+}
