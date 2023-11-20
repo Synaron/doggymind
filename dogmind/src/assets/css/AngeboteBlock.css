@@ -4,9 +4,10 @@
     color: black;
     display: flex;
     flex-direction: column; /* Align items horizontally */
-    align-items: flex-end; /* Center items vertically */
-    justify-content: flex-end; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
     padding-top: 3rem;
+    margin:0;
 }
 
 
@@ -16,9 +17,10 @@
     list-style-type:none;
     display: flex;
     flex-direction: column; /* Align items horizontally */
-    align-items: flex-start; /* Center items vertically */
-    justify-content: flex-start; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
     padding-top: 3rem;
+    margin:0;
 }
 
 #background-angebote{

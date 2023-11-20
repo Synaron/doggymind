@@ -19,3 +19,4 @@
 .half-circle-container.reverse-half-circle {
   transform: scaleX(-1); /* Horizontal mirroring for reverse class */
 }
+

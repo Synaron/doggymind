@@ -28,10 +28,10 @@ function AngeboteBlock({ imageUrl, data, index }) {
           </>
         ) : (
           <>
-              <Col md={4} className={`ml-auto ${shouldReverse ? 'mr-0' : ''}`}>
+            <Col md={4} className={`ml-auto d-flex justify-content-end ${shouldReverse ? 'mr-0' : ''}`}>
               <HalfCirclePic imageUrl={imageUrl} shouldReverse={shouldReverse} />
             </Col>
-                        <Col md={4} id="background-angebote-reverse">
+            <Col md={4} id="background-angebote-reverse">
               <ul id="title-list-reverse">
                 {titles.map((title, idx) => (
                   <li key={idx}>{title}</li>
