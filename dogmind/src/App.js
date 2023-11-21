@@ -4,6 +4,9 @@ import './App.css';
 import Home from './components/pages/Home';
 import Angebote from './components/pages/Angebote';
 import Navbar from './components/NavBar';
+import WelpenJunghundTraining from './components/pages/WelpenJunghundTraining';
+import trainingData from './data';
+
 
 function App() {
 
@@ -15,6 +18,7 @@ function App() {
         {/* Define routes for the home page and Angebote page */}
         <Route path="/" element={<Home />} />
         <Route path="/angebote" element={<Angebote />} />
+        <Route path="/Welpen und Junghundtraining" element={<WelpenJunghundTraining data={trainingData} />} />
       </Routes>
       </div>
     </Router>

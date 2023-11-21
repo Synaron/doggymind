@@ -1,7 +1,6 @@
 import '../../App.css';
-import { Link } from 'react-router-dom';
 import Slider from "../Slider";
-import Intro from "../Intro";
+import Intro2 from "../Intro2";
 import Probleme from '../Probleme';
 import FAQ from '../FAQ';
 import AngeboteBlock from '../AngeboteBlock';
@@ -10,6 +9,7 @@ import MedicalTraining from '../../assets/images/MedicalTraining.png';
 import Anschaffung from '../../assets/images/anschaffung.png';
 import trainingData from '../../data';
 import PfotenHeading from '../PfotenHeading';
+import { Link as ScrollLink } from 'react-scroll';
 
 function Home() {
   // Split the trainingData into chunks of 6 for each AngeboteBlock
@@ -24,30 +24,36 @@ function Home() {
     }
 
 
-  return (
-    <div className="App">
-      <Slider />
-      <Intro />
-      <Probleme />
-      <PfotenHeading title="Meine Angebote" />
-      {chunkedData.map((chunk, index) => (
-        <div key={index}>
-          <AngeboteBlock
-            imageUrl={index % 2 === 0 ? Welpe2 : index === 2 ? Anschaffung : MedicalTraining}
-            data={chunk}
-            isFirstBlock={index === 0}
-            index={index}
-          />
-          {index < chunkedData.length - 1 && <div style={{ marginBottom: '20px' }}></div>}
-        </div>
-      ))}
-      <Link to="/angebote">
-        <button>Mehr erfahren</button>
-      </Link>
-      <PfotenHeading title="FAQ" />
-      <FAQ />
-    </div>
-  );
-}
-
-export default Home;
+    return (
+      <div className="App">
+        <Slider />
+        <Intro2
+          firstWord="Dog"
+          secondWord="mind"
+          secondPhrase="– mind my dog"
+          firstParagraph="Die Hundesprache verstehen und deuten zu können, ist wie eine neue Fremdsprache zu lernen. Nur durch viel Übung und Anwendung zu meistern. Ich helfe dir und deinem besten Freund, eure Kommunikation und somit eure Bindung zusätzlich zu stärken."
+          secondParagraph="Im individuellen Einzeltraining konzentriere ich mich nur auf dich und deinen Hund. Dadurch könnt ihr gemeinsam effektiv und intensiv an euren Zielen arbeiten. So einzigartig wie jeder Mensch und jeder Hund ist, so auch der Trainingsansatz. Gemeinsam finden wir den passenden Weg für euch."
+        />
+        <ScrollLink to="Probleme" smooth={true} duration={500} offset={-50}>
+          <Probleme />
+        </ScrollLink>
+        <PfotenHeading title="Meine Angebote" />
+        {chunkedData.map((chunk, index) => (
+          <ScrollLink key={index} to={`Angebote${index}`} smooth={true} duration={500} offset={-50}>
+            <AngeboteBlock
+              imageUrl={index % 2 === 0 ? Welpe2 : index === 2 ? Anschaffung : MedicalTraining}
+              data={chunk}
+              isFirstBlock={index === 0}
+              index={index}
+            />
+          </ScrollLink>
+        ))}
+        <ScrollLink to="FAQ" smooth={true} duration={500} offset={-50}>
+          <PfotenHeading title="FAQ" id="faq" />
+          <FAQ />
+        </ScrollLink>
+      </div>
+    );
+  }
+  
+  export default Home;

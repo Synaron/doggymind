@@ -2,7 +2,7 @@
 const trainingData = [
     {
       id: 1,
-      title: 'Welpen-/Junghundtraining',
+      title: 'Welpen und Junghundtraining',
       description: 'Einen süssen Welpen zu erziehen ist nicht immer so einfach...',
       contents: [
         'Stubenreinheit',

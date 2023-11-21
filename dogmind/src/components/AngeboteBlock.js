@@ -3,6 +3,7 @@ import Row from 'react-bootstrap/esm/Row';
 import Col from 'react-bootstrap/esm/Col';
 import HalfCirclePic from '../components/HalfCirclePic';
 import '../assets/css/AngeboteBlock.css';
+import { Link } from 'react-router-dom';
 
 // Inside AngeboteBlock component
 function AngeboteBlock({ imageUrl, data, index }) {
@@ -18,7 +19,7 @@ function AngeboteBlock({ imageUrl, data, index }) {
             <Col md={4} id="background-angebote">
               <ul id="title-list">
                 {titles.map((title, idx) => (
-                  <li key={idx}>{title}</li>
+                  <Link to={`/${title}`}>{title}</Link>
                 ))}
               </ul>
             </Col>
@@ -34,7 +35,7 @@ function AngeboteBlock({ imageUrl, data, index }) {
             <Col md={4} id="background-angebote-reverse">
               <ul id="title-list-reverse">
                 {titles.map((title, idx) => (
-                  <li key={idx}>{title}</li>
+                  <Link to={`/${title}`}>{title}</Link>
                 ))}
               </ul>
             </Col>
