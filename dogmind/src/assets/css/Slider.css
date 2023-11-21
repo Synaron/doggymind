@@ -1,0 +1,30 @@
+
+.carousel-inner .carousel-item .carousel-caption {
+    background-color:rgb(246,190,0, 0.7);
+    margin-bottom: 6rem;
+  
+}
+
+.carousel-inner .carousel-item .carousel-caption h3, p {
+    color: black;
+    text-align: center;
+}
+
+.carousel .carousel-indicators button {
+background-color: white;
+margin-bottom: 6rem;
+}
+
+.carousel-control-next-icon {
+  background-image: url("../../assets/images/pawyellow_right.png");
+  width: 70px;
+  height: 70px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("../../assets/images/pawyellow_left.png");
+  width: 70px;
+  height: 70px;
+}
+
+

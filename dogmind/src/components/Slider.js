@@ -4,7 +4,7 @@ import Slider1 from '../assets/images/Slider1.png';
 import Slider2 from '../assets/images/Slider2.png';
 import Slider3 from '../assets/images/Slider3.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../assets/css/Slider.scss';
+import '../assets/css/Slider.css';
 
 
 
