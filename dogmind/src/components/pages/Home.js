@@ -10,6 +10,8 @@ import Anschaffung from '../../assets/images/anschaffung.png';
 import trainingData from '../../data';
 import PfotenHeading from '../PfotenHeading';
 import { Link as ScrollLink } from 'react-scroll';
+import IntroPic1 from '../../assets/images/Intro1.png';
+import IntroPic2 from '../../assets/images/Intro2.png';
 
 function Home() {
   // Split the trainingData into chunks of 6 for each AngeboteBlock
@@ -34,7 +36,10 @@ function Home() {
           secondWord="mind"
           secondPhrase="– mind my dog"
           firstParagraph="Die Hundesprache verstehen und deuten zu können, ist wie eine neue Fremdsprache zu lernen. Nur durch viel Übung und Anwendung zu meistern. Ich helfe dir und deinem besten Freund, eure Kommunikation und somit eure Bindung zusätzlich zu stärken."
-          secondParagraph="Im individuellen Einzeltraining konzentriere ich mich nur auf dich und deinen Hund. Dadurch könnt ihr gemeinsam effektiv und intensiv an euren Zielen arbeiten. So einzigartig wie jeder Mensch und jeder Hund ist, so auch der Trainingsansatz. Gemeinsam finden wir den passenden Weg für euch." />
+          secondParagraph="Im individuellen Einzeltraining konzentriere ich mich nur auf dich und deinen Hund. Dadurch könnt ihr gemeinsam effektiv und intensiv an euren Zielen arbeiten. So einzigartig wie jeder Mensch und jeder Hund ist, so auch der Trainingsansatz. Gemeinsam finden wir den passenden Weg für euch." 
+          image1={IntroPic1}
+          image2={IntroPic2}
+          />
         </ScrollLink>
 
         <ScrollLink to="Probleme" smooth={true} duration={500} offset={-50}>

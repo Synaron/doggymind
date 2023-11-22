@@ -1,21 +1,24 @@
-import React from 'react'
+import React from 'react';
 import RoundedImage from './RoundedImage';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Intro1 from '../assets/images/Intro1.png';
-import Intro2 from '../assets/images/Intro2.png';
+
 import '../assets/css/ImageBlock.css';
 
-function ImageBlock() {
+function ImageBlock({ image1, image2 }) {
   return (
     <Container className="image-block-container">
-    <Row>
-      <Col><RoundedImage img={Intro1} /></Col>
-      <Col><RoundedImage img={Intro2} /></Col> 
-    </Row>
-  </Container>
-  )
+      <Row>
+        <Col>
+          <RoundedImage img={image1} />
+        </Col>
+        <Col>
+          <RoundedImage img={image2} />
+        </Col>
+      </Row>
+    </Container>
+  );
 }
 
-export default ImageBlock
+export default ImageBlock;
