@@ -12,6 +12,7 @@ import PfotenHeading from '../PfotenHeading';
 import { Link as ScrollLink } from 'react-scroll';
 import IntroPic1 from '../../assets/images/Intro1.png';
 import IntroPic2 from '../../assets/images/Intro2.png';
+import NavBar from "../NavBar";
 
 function Home() {
   // Split the trainingData into chunks of 6 for each AngeboteBlock
@@ -28,6 +29,7 @@ function Home() {
 
     return (
       <div className="App">
+        <NavBar />
         <Slider />
       
         <ScrollLink to="Intro2" smooth={true} duration={500} offset={-50}>

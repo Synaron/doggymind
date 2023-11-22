@@ -4,18 +4,24 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ImageBlock from './ImageBlock';
 
-function Intro({
+function Intro2({
   firstWord,
   secondWord,
   secondPhrase,
   firstParagraph,
   secondParagraph,
+  listStyle,
   image1,
   image2,
 }) {
   const paragraphStyle = {
     fontFamily: 'AnHanken Grotesk',
-    fontSize: '1rem', // Adjust the font size as needed
+    fontSize: '1.2rem', // Adjust the font size as needed
+  };
+
+  const listStyleConstant = {
+    listStyleType: 'disc', // You can customize this as needed
+    marginLeft: '12rem', // Adjust the left margin as needed
   };
 
   return (
@@ -27,6 +33,15 @@ function Intro({
             {secondPhrase}
           </h1>
           <p style={paragraphStyle}>{firstParagraph}</p>
+                    {Array.isArray(listStyle) ? (
+            <ul style={{ ...paragraphStyle, ...listStyleConstant }}>
+              {listStyle.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          ) : (
+            <p style={paragraphStyle}>{listStyle}</p>
+          )}
           <p style={paragraphStyle}>{secondParagraph}</p>
         </Col>
         <Col style={{ padding: 0 }} md={6}>
@@ -37,4 +52,4 @@ function Intro({
   );
 }
 
-export default Intro;
+export default Intro2;

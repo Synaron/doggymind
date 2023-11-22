@@ -12,7 +12,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-      <Navbar />
       <Routes>
         {/* Define routes for the home page and Angebote page */}
         <Route path="/" element={<Home />} />
