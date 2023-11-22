@@ -11,7 +11,7 @@ function Intro({ firstWord, secondWord, secondPhrase, firstParagraph, secondPara
   };
 
   return (
-    <Container fluid>
+    <Container fluid id="Intro2">
       <Row style={{ display: 'flex', alignItems: 'stretch' }}>
         <Col className='intro-text-block' md={6}>
           <h1>{firstWord} <span style={{ color: '#F6BE00' }}>{secondWord}</span> {secondPhrase}</h1>

@@ -8,7 +8,7 @@ import Profil2 from '../assets/images/Profil2.png';
 
 function Probleme() {
   return (
-    <div id='Probleme-Div'>
+    <div id='Probleme'>
         <Row id="Probleme-Row">
         <Col className="left-block" md={6}>
           <Col>

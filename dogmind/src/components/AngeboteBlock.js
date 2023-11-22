@@ -11,7 +11,7 @@ function AngeboteBlock({ imageUrl, data, index }) {
   const shouldReverse = index % 2 !== 0; // Determine if HalfCirclePic should be reversed
 
   return (
-    <div>
+    <div id="Angebote">
       <Row>
         {index % 2 === 0 ? (
           <>

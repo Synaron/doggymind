@@ -8,22 +8,22 @@ function Navbar() {
     <nav>
       <ul>
         <li>
-          <Link to="Intro2" smooth={true} duration={500}>
+          <Link style={{ color: '#ffffff' }} to="Intro2" smooth={true} duration={500}>
             Über mich
           </Link>
         </li>
         <li>
-          <Link to="Probleme" smooth={true} duration={500}>
+          <Link style={{ color: '#ffffff' }} to="Probleme" smooth={true} duration={500}>
             Häufige Probleme
           </Link>
         </li>
         <li>
-          <Link to="Angebote" smooth={true} duration={500}>
+          <Link style={{ color: '#ffffff' }} to="Angebote" smooth={true} duration={500}>
             Mein Training
           </Link>
         </li>
         <li>
-          <Link to="FAQ" smooth={true} duration={500}>
+          <Link style={{ color: '#ffffff' }} to="FAQ" smooth={true} duration={500}>
             FAQ
           </Link>
         </li>

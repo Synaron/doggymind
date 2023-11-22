@@ -1,5 +1,5 @@
 import React from 'react';
-import Welpe1 from '../../assets/images/Welpe1.png';  // Import Header component
+import Welpe2 from '../../assets/images/Welpe2.png';  // Import Header component
 import Header from '../Header';
 import Intro2 from "../Intro2";
 import trainingData from '../../data';
@@ -9,7 +9,7 @@ function WelpenJunghundTraining() {
     const { description, note } = trainingData;
   return (
     <div>
-        <Header title="Welpen- und Junghundtraining" imageUrl={Welpe1} />
+        <Header title="Welpen- und Junghundtraining" imageUrl={Welpe2} />
         <Intro2
         data={trainingData}
         firstWord=""

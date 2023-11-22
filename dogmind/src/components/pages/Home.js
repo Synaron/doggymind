@@ -27,27 +27,31 @@ function Home() {
     return (
       <div className="App">
         <Slider />
+      
+        <ScrollLink to="Intro2" smooth={true} duration={500} offset={-50}>
         <Intro2
           firstWord="Dog"
           secondWord="mind"
           secondPhrase="– mind my dog"
           firstParagraph="Die Hundesprache verstehen und deuten zu können, ist wie eine neue Fremdsprache zu lernen. Nur durch viel Übung und Anwendung zu meistern. Ich helfe dir und deinem besten Freund, eure Kommunikation und somit eure Bindung zusätzlich zu stärken."
-          secondParagraph="Im individuellen Einzeltraining konzentriere ich mich nur auf dich und deinen Hund. Dadurch könnt ihr gemeinsam effektiv und intensiv an euren Zielen arbeiten. So einzigartig wie jeder Mensch und jeder Hund ist, so auch der Trainingsansatz. Gemeinsam finden wir den passenden Weg für euch."
-        />
-        <ScrollLink to="Probleme" smooth={true} duration={500} offset={-50}>
-          <Probleme />
+          secondParagraph="Im individuellen Einzeltraining konzentriere ich mich nur auf dich und deinen Hund. Dadurch könnt ihr gemeinsam effektiv und intensiv an euren Zielen arbeiten. So einzigartig wie jeder Mensch und jeder Hund ist, so auch der Trainingsansatz. Gemeinsam finden wir den passenden Weg für euch." />
         </ScrollLink>
-        <PfotenHeading title="Meine Angebote" />
+
+        <ScrollLink to="Probleme" smooth={true} duration={500} offset={-50}>
+        <Probleme />
+        </ScrollLink>
+
+        <PfotenHeading title="Meine Angebote" id="Angebote" />
         {chunkedData.map((chunk, index) => (
-          <ScrollLink key={index} to={`Angebote${index}`} smooth={true} duration={500} offset={-50}>
-            <AngeboteBlock
-              imageUrl={index % 2 === 0 ? Welpe2 : index === 2 ? Anschaffung : MedicalTraining}
-              data={chunk}
-              isFirstBlock={index === 0}
-              index={index}
-            />
-          </ScrollLink>
-        ))}
+        <ScrollLink key={index} to={`Angebote${index}`} smooth={true} duration={500} offset={-50}>
+          <AngeboteBlock
+            imageUrl={index % 2 === 0 ? Welpe2 : index === 2 ? Anschaffung : MedicalTraining}
+            data={chunk}
+            isFirstBlock={index === 0}
+            index={index}
+          />
+        </ScrollLink>
+      ))}
         <ScrollLink to="FAQ" smooth={true} duration={500} offset={-50}>
           <PfotenHeading title="FAQ" id="faq" />
           <FAQ />
