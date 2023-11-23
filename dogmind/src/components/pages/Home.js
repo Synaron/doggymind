@@ -12,7 +12,7 @@ import PfotenHeading from '../PfotenHeading';
 import { Link as ScrollLink } from 'react-scroll';
 import IntroPic1 from '../../assets/images/Intro1.png';
 import IntroPic2 from '../../assets/images/Intro2.png';
-import NavBar from "../NavBar";
+import Navbar from "../Navbar";
 
 function Home() {
   // Split the trainingData into chunks of 6 for each AngeboteBlock
@@ -29,7 +29,7 @@ function Home() {
 
     return (
       <div className="App">
-        <NavBar />
+        <Navbar />
         <Slider />
       
         <ScrollLink to="Intro2" smooth={true} duration={500} offset={-50}>
@@ -53,12 +53,12 @@ function Home() {
         <ScrollLink key={index} to={`Angebote${index}`} smooth={true} duration={500} offset={-50}>
           <AngeboteBlock
             imageUrl={index % 2 === 0 ? Welpe2 : index === 2 ? Anschaffung : MedicalTraining}
-            data={chunk}
-            isFirstBlock={index === 0}
+            data={chunk} // Pass the entire chunk of data
             index={index}
           />
         </ScrollLink>
       ))}
+      
         <ScrollLink to="FAQ" smooth={true} duration={500} offset={-50}>
           <PfotenHeading title="FAQ" id="faq" />
           <FAQ />

@@ -8,6 +8,7 @@
     justify-content: center; /* Center items horizontally */
     padding-top: 3rem;
     margin:0;
+    border-color: white;
 }
 
 
@@ -21,6 +22,7 @@
     justify-content: center; /* Center items horizontally */
     padding-top: 3rem;
     margin:0;
+    border-color: white;
 }
 
 #background-angebote{
@@ -31,3 +33,14 @@
 #background-angebote-reverse{
     background-color: black;
 }
+
+.custom-link {
+    color: black; /* Set the desired color */
+    text-decoration: none; /* Remove underlining */
+    border-color: white;
+  }
+  
+  #title-list-reverse .custom-link {
+    color: rgb(246, 190, 0, 0.7); /* Set the desired color for reversed list */
+    border-color: white;
+  }

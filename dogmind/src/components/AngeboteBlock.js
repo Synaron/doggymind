@@ -19,7 +19,7 @@ function AngeboteBlock({ imageUrl, data, index }) {
             <Col md={4} id="background-angebote">
               <ul id="title-list">
                 {titles.map((title, idx) => (
-                  <Link to={`/${title}`}>{title}</Link>
+                  <Link to={`/${title}`} className="custom-link">{title}</Link>
                 ))}
               </ul>
             </Col>
@@ -35,7 +35,7 @@ function AngeboteBlock({ imageUrl, data, index }) {
             <Col md={4} id="background-angebote-reverse">
               <ul id="title-list-reverse">
                 {titles.map((title, idx) => (
-                  <Link to={`/${title}`}>{title}</Link>
+                  <Link to={`/${title}`} className="custom-link">{title}</Link>
                 ))}
               </ul>
             </Col>
