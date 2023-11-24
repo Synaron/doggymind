@@ -1,0 +1,31 @@
+.background-with-overlay {
+    /* Set the background image and create a linear gradient for the color overlay */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/Alltagstauglich.jpeg');
+  
+    /* Set the size and position of the background image */
+    background-size: cover;
+    background-position: right;
+  
+    /* Set other styles as needed */
+    color: #fff; /* Text color on top of the overlay */
+
+    min-height: 70vh;
+  }
+
+  #Kontakt{
+    padding-top: 8%;
+  }
+
+  .Hintergrund-Kontakt{
+    background-color: rgb(246,190,0, 0.7);
+    margin-right:50%;
+    padding-left: 5%;
+  }
+
+  .Kontakt-Absatz {
+    color: white;
+  }
+  
+  .Content-Kontakt {
+    padding: 20%;
+  }

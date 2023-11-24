@@ -1,7 +1,7 @@
 import React from 'react';
-import Welpe2 from '../../assets/images/Welpe2.png';  // Import Header component
+import Welpe1 from '../../assets/images/Welpe1.png';  // Import Header component
 import Header from '../Header';
-import Intro2 from "../Intro2";
+import IntroSub from "../IntroSub";
 import trainingData from '../../data';
 import IntroPic1 from '../../assets/images/Welpe1.png';
 import IntroPic2 from '../../assets/images/Welpe2.png';
@@ -27,8 +27,8 @@ function WelpenJunghundTraining() {
   return (
     <div>
       <NavbarSub />
-      <Header title="Welpen- und Junghundtraining" imageUrl={Welpe2} />
-      <Intro2
+      <Header title="Welpen- und Junghundtraining" imageUrl={Welpe1} />
+      <IntroSub
         data={data}
         firstWord=""
         secondWord="Welpen-und Junghund"
@@ -39,14 +39,6 @@ function WelpenJunghundTraining() {
         image1={IntroPic1}
         image2={IntroPic2}
       />
-      <h1>Weitere Angebote</h1>
-      {chunkedData.map((chunk, index) => (
-      <AngeboteBlock
-            imageUrl={index % 2 === 0 ? Welpe2 : index === 2 ? Anschaffung : MedicalTraining}
-            data={chunk} // Pass the entire chunk of data
-            index={index}
-          />
-      ))}
       <AngeboteCards />
       </div>
   );

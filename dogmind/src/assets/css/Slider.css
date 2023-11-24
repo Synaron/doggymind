@@ -1,8 +1,16 @@
 
+.carousel {
+  height: 90vh; /* Adjust the height to complement the navbar height */
+}
+
+.carousel-item img {
+  height: 100%; /* Make the image fill the height of its container */
+  object-fit: cover; /* Maintain image aspect ratio while covering the container */
+}
+
 .carousel-inner .carousel-item .carousel-caption {
     background-color:rgb(246,190,0, 0.7);
     margin-bottom: 6rem;
-  
 }
 
 .carousel-inner .carousel-item .carousel-caption h3, p {

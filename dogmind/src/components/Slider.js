@@ -18,7 +18,7 @@ function Slider() {
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
-        <img className="d-block w-100" src={Slider1} alt="First slide" />
+      <img className="d-block w-100" src={Slider1} alt="First slide" style={{ height: '90vh' }} />
         <Carousel.Caption>
           <h3>Individualtraining</h3>
           <p>Das Hundetraining wird an eure Voraussetzungen und Wünsche angepasst.</p>

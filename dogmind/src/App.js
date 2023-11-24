@@ -4,6 +4,7 @@ import './App.css';
 import Home from './components/pages/Home';
 import WelpenJunghundTraining from './components/pages/WelpenJunghundTraining';
 import trainingData from './data';
+import Contact from './components/Contact';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Welpen und Junghundtraining" element={<WelpenJunghundTraining data={trainingData} />} />
       </Routes>
+      <Contact />
       </div>
     </Router>
   );

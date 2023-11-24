@@ -9,11 +9,11 @@ import Alltagstauglich from '../assets/images/Alltagstauglich.png';
 import MedicalTraining from '../assets/images/MedicalTraining.png';
 import verhalten from '../assets/images/verhalten.png';
 import socialwalk from '../assets/images/socialwalk.png';
-import antijagd from '../assets/images/antijagd.png';
+import antijagd from '../assets/images/antijagd.jpg';
 import spaziergang from '../assets/images/spaziergang.png';
-import hundkind from '../assets/images/hundkind.png';
+import hundkind from '../assets/images/hundkind.jpg';
 import hundmithandicap from '../assets/images/hundmithandicap.png';
-import faszien from '../assets/images/faszien.png';
+import faszien from '../assets/images/faszien.jpg';
 import anschaffung from '../assets/images/anschaffung.png'
 
 function AngeboteCards() {

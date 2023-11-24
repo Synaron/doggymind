@@ -5,6 +5,8 @@ nav {
     display: flex; /* Use flexbox to align items */
     justify-content: flex-end; /* Align items along the main axis with space between them */
     align-items: center;
+    height: 10vh; /* Adjust the height as needed */
+    
   }
   
  nav ul {
