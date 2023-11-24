@@ -1,0 +1,13 @@
+/* styles.css */
+.footer {
+  display: flex;
+  background-color: black;
+  padding: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 10px; /* Adjust margin as needed for spacing between columns */
+}
+
+/* Additional styling as needed */

@@ -1,37 +1,25 @@
-import React from 'react'
-
-function Footer() {
-  return (
-    <div>
-        // Footer.js
+// Footer.js
 import React from 'react';
-import Column from './Column'; // Create a separate Column component
+import Col from 'react-bootstrap/esm/Col';  
+import '../assets/css/Footer.css'
 
 const Footer = () => {
   return (
-    <footer>
-        <Column title="Data and Impressum">
-            <p>Impressum</p>
-            <p>Datenschutz</p>
-        </Column>
+    <footer className="footer">
+      <Col title="Data and Impressum">
+        <p>Impressum</p>
+        <p>Datenschutz</p>
+      </Col>
 
-        <Column title="Copyright">
-            <p>&copy; 2023 Your Company Name. All Rights Reserved.</p>
-        </Column>
+      <Col title="Copyright">
+        <p>&copy; 2023 Your Company Name. All Rights Reserved.</p>
+      </Col>
 
-        <Column title="Social Media">
-            {/* Add social media icons and links here */}
-        </Column>
-
-      
+      <Col title="Social Media">
+        {/* Add social media icons and links here */}
+      </Col>
     </footer>
   );
 };
 
 export default Footer;
-
-    </div>
-  )
-}
-
-export default Footer

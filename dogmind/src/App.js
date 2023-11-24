@@ -5,7 +5,7 @@ import Home from './components/pages/Home';
 import WelpenJunghundTraining from './components/pages/WelpenJunghundTraining';
 import trainingData from './data';
 import Contact from './components/Contact';
-import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
         <Route path="/Welpen und Junghundtraining" element={<WelpenJunghundTraining data={trainingData} />} />
       </Routes>
       <Contact />
+      <Footer />
       </div>
     </Router>
   );

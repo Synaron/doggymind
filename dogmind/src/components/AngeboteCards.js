@@ -18,7 +18,7 @@ function AngeboteCard({ trainingData, categories }) {
       <Row>
         {filteredData.map((training) => (
           <Card key={training.id} className={training.id % 2 === 0 ? 'even-card' : 'odd-card'} style={{ width: '18rem' }}>
-            <img src={training.image} alt={training.title} />
+            <img src={training.imagePath} alt={training.title} /> {/* Update this line */}
             <Card.Body>
               <Card.Title>{training.title}</Card.Title>
               <Card.Text>{training.cardText}</Card.Text>
@@ -37,11 +37,11 @@ AngeboteCard.propTypes = {
       id: PropTypes.number.isRequired,
       title: PropTypes.string.isRequired,
       cardText: PropTypes.string.isRequired,
-      image: PropTypes.string.isRequired,
+      imagePath: PropTypes.string.isRequired, // Update this line
       category: PropTypes.string.isRequired,
     })
   ).isRequired,
-  categories: PropTypes.arrayOf(PropTypes.string).isRequired, // Use 'categories' instead of 'category'
+  categories: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default AngeboteCard;
