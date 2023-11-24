@@ -59,8 +59,7 @@ function Home() {
       ))}
       
         <ScrollLink to="FAQ" smooth={true} duration={500} offset={-50}>
-          <PfotenHeading title="FAQ" id="faq" />
-          <FAQ />
+          <FAQ id="faq" />
         </ScrollLink>
       </div>
     );

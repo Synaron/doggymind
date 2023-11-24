@@ -3,6 +3,7 @@
   display: flex;
   background-color: black;
   padding: 20px;
+  align-items: center; /* Align items vertically in the center */
 }
 
 .footer-column {
@@ -10,4 +11,20 @@
   margin: 0 10px; /* Adjust margin as needed for spacing between columns */
 }
 
-/* Additional styling as needed */
+.footer-text {
+  color: white; /* Set text color to white */
+  margin: 20px; /* Remove default margin to avoid spacing issues */
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex; /* Use flexbox for the icons */
+  align-items: center; /* Align icons vertically in the center */
+  justify-content:center;
+}
+
+.social-icon {
+  color: white; /* Set icon color to white */
+  font-size: 24px; /* Adjust icon size as needed */
+  margin-right: 80px; /* Adjust margin as needed for spacing between icons */
+}
