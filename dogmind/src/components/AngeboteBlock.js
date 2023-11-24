@@ -4,6 +4,7 @@ import Col from 'react-bootstrap/esm/Col';
 import HalfCirclePic from '../components/HalfCirclePic';
 import '../assets/css/AngeboteBlock.css';
 import { Link } from 'react-router-dom';
+import AnimatedSVGSeries from './SVGAnimation';
 
 // Inside AngeboteBlock component
 function AngeboteBlock({ imageUrl, data, index }) {
@@ -15,7 +16,9 @@ function AngeboteBlock({ imageUrl, data, index }) {
       <Row>
         {index % 2 === 0 ? (
           <>
-            <Col md={4} id="background-angebote"></Col>
+            <Col md={4}>
+            <AnimatedSVGSeries />
+              </Col>
             <Col md={4} id="background-angebote">
               <ul id="title-list">
                 {titles.map((title, idx) => (

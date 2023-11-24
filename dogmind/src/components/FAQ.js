@@ -8,9 +8,9 @@ import Spaziergang from '../assets/images/spaziergang.png';
 function FAQ() {
   return (
     <Row>
-    <Col>
+      <h1>FAQ</h1>
+    <Col md={6} className="faq-col">
     <div id="FAQ">
-    <h1>FAQ</h1>
     <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
         <Accordion.Header className="accordion-header">Was ist Individualtraining bei Dog Mind?</Accordion.Header>
@@ -35,7 +35,7 @@ function FAQ() {
     </Accordion>
     </div>
     </Col>
-    <Col>
+    <Col md={6} className="img-col">
     <img src={Spaziergang} alt="Spaziergang" />
     </Col>
     </Row>
