@@ -5,6 +5,7 @@ import Home from './components/pages/Home';
 import WelpenJunghundTraining from './components/pages/WelpenJunghundTraining';
 import trainingData from './data';
 import Contact from './components/Contact';
+import Navbar from './components/Navbar';
 
 
 function App() {

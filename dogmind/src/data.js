@@ -3,6 +3,8 @@ const trainingData = [
     {
       id: 1,
       title: 'Welpen und Junghundtraining',
+      category: 'Welpen',
+      cardText: 'Wir legen miteinander den richtigen Grundstein in der wichtigsten Entwicklungsphase.',
       description: 'Einen süssen Welpen zu erziehen ist nicht immer so einfach...',
       contents: [
         'Stubenreinheit',
@@ -20,6 +22,8 @@ const trainingData = [
     {
       id: 2,
       title: 'Welpen Gruppenkurs',
+      category: 'Welpen',
+      cardText: 'Sozialisierung mit Hunden, Menschen, Umgebungen, Geräuschen und vieles mehr.',
       description: 'Ab wann? - Ab dem Welpenalter von 10 Wochen und dein Hund sollte mindestens 2 Wochen zuhause angekommen sein. Dauer 10 Einheiten, 1x wöchentlich',
       contents: [
         'Sozialisierung mit Hunden, Menschen, Umgebungen, Geräuschen uvm.',
@@ -32,6 +36,8 @@ const trainingData = [
     {
       id: 3,
       title: 'Alltagstauglichkeit für Jung und Alt',
+      category: 'Alltag',
+      cardText: 'Jede erdenkliche Alltagssituation so entspannt als möglich meistern.',
       description: 'Mir ist sehr wichtig, dass du und dein treuer Begleiter jede erdenkliche Alltagssituation so entspannt als möglich meistert.',
       contents: [
         'Leinenführigkeit',
@@ -47,6 +53,8 @@ const trainingData = [
     {
       id: 4,
       title: 'Medical Training',
+      category: 'Probleme',
+      cardText: 'Tierarztbesuche und Medikamentenverabreichung trainieren, für stressfreie Behandlungen.',
       description: 'Der Tierarztbesuch, sowie die Verabreichung von Medikamenten ist für viele Hunde unangenehm. Das Medical-Training bietet dir und deinem Freund die Möglichkeit, diese Situationen stressfrei und sogar entspannt zu erleben. Zudem wird eure Bindung dadurch noch mehr gestärkt,  da Schwieriges miteinander positiv erlebt wird.',
       contents: [
         'Berührungen von Fremden',
@@ -62,6 +70,8 @@ const trainingData = [
     {
       id: 5,
       title: 'Verhaltensauffälligkeiten',
+      category: 'Probleme',
+      cardText:'Unerwünschtes Verhalten durch Training gezielt korrigieren.',
       description: 'Wenn du dich fragst, warum dein Hund unter bestimmten Bedingungen ein spezielles Verhalten zeigt, das für dich nicht erklärbar ist, bist du hier richtig. Es gibt eine Vielzahl von unerwünschten Verhalten:',
       contents: [
         'Zerren an der Leine / Sprung in die Leine',
@@ -79,6 +89,8 @@ const trainingData = [
     {
       id: 6,
       title: 'Spiel und Beschäftigung',
+      category: 'Alltag',
+      cardText: 'Sinnvolle Beschäftigung für Ausdauer und Köpfchen.',
       description: 'Es gibt viele Möglichkeiten unseren geliebten Vierbeiner zu beschäftigen. Am wichtigsten ist es, dass ihr beide Spaß habt. Deshalb finden wir gemeinsam die für euch ideale Beschäftigung.',
       contents: [
         'Nasenarbeit (Fährte)',
@@ -93,40 +105,53 @@ const trainingData = [
     {
       id: 7,
       title: 'Training Kind mit Hund',
+      category: 'Spezialthema',
+      cardText: 'Ziel ist es, eurem Nachwuchs die grundlegende Kommunikation mit eurem Fellknäuel beizubringen.',
       description: 'Wichtig im Zusammenleben mit Hunden ist, dass auch unsere kleinen Familienmitglieder verstehen, warum unser Freund ein bestimmtes Verhalten zeigt. Ziel ist es, euren Nachwuchs die grundlegende Kommunikation mit dem Fellknäuel durch Tricks beizubringen. Ich zeige euch Möglichkeiten, wie das Leben mit Kind(ern) und Hund entspannt möglich ist.',
     },
     {
       id: 8,
       title: 'Hund mit Handicap',
+      category: 'Spezialthema',
+      cardText: 'Auch Hunde mit Behinderung wollen und brauchen Erziehung und Beschäftigung.',
       description: 'Hunde mit Behinderung wollen genauso arbeiten wie jeder andere Hund und brauchen Erziehung und Beschäftigung. Jedes Training wird auf die individuellen Bedürfnisse abgestimmt und garantiert Spaß und Erfolg für Hund und Halter.',
     },
     {
       id: 9,
       title: 'Spaziergang mit dem Hund',
+      category: 'Spezialservices',
+      cardText:'Wenn zum Gassi-Gehen mal keine Zeit bleibt, gehe gerne ich eine Runde mit deiner Fellnase spazieren.',
       description: 'So sehr wir nur das Beste für unseren Vierbeiner wollen, stehen uns oftmals Verpflichtungen im Weg, wodurch ein notwendiger Spaziergang nicht möglich ist. Nach einem ausgiebigen Kennenlerngespräch hole ich deinen Begleiter zur vereinbarten Zeit am vereinbarten Ort ab. Ist mit meinen anderen Angeboten kombinierbar.',
     },
 
     {
       id: 10,
       title: 'Anschaffungsberatung',
+      category: 'Spezialservices',
+      cardText:'Ein Hund ist eine große Verantwortung. Entsprechend wohl überlegt sollte eine Anschaffung sein. Ich berate dich gerne.',
       description: 'Bevor eine Fellnase ein Teil deiner Familie wird, solltest du dir einige Fragen stellen und diese beantworten können. Ich helfe und begleite dich dabei sehr gerne – egal ob Welpe oder Tierschutzhund, da ich für euch nur das Beste will. Begleite: Ich fahr mit zum Tierheim oder zum Züchter – vielleicht fällt dir dabei ein besseres Wording ein.',
     },
 
     {
       id: 11,
       title: 'Anti-Jagd-Training',
+      category: 'Spezialthema',
+      cardText:'Der Jagdtrieb deines Hundes bringt dich zur Verzweiflung? Kein Problem, Für Anti-Jagd-Training ist es nie zu spät.',
       description: 'Ein Hase, Reh oder die Nachbarskatze – mehr braucht es nicht und dein Hund wechselt in den Jagdmodus. Rückruf oder Grundkommandos scheinen in dieser Situation vergessen zu sein. Der Jagdtrieb deines Hundes bringt dich zur Verzweiflung? Kein Problem, Für Anti- Jagd- Training ist es nie zu spät! Der Jagdtrieb eines Hundes kann meist nicht vollständig abgewöhnt, aber kontrolliert werden. Unter der Beachtung der Fähigkeiten deines Hundes erstellen wir gemeinsam den für euch passenden Trainingsweg.',
     },
 
     {
       id: 12,
       title: 'Social-Walk',
+      category: 'Spezialthema',
+      cardText: 'Unter kontrollierten Bedingungen und Anleitung eines Trainers auf Artgenossen und Menschen treffen und Begegnungen trainieren.',
       description: 'Ein Social Walk bietet die Möglichkeit, unter kontrollierten Bedingungen und Anleitung eines Trainers auf Artgenossen und Menschen zu treffen und Begegnungen zu trainieren. Mensch und Hund lernen gemeinsam mit anderen Teams sich durch den Alltag zu bewegen. Schwerpunkte: Training der Leinenführigkeit unter Ablenkung, Körpersprache des eigenen Hundes deuten lernen, Sozialkontakte mit angemessenen Verhalten der Hunde untereinander. Ziel: Der eigene Hund lernt, dass die Anwesenheit anderer Hunde beim Gassi/Spazierengehen dazugehört und er in der Situation neutral (nicht aufgeregt oder ängstlich) reagiert.',
     },
-
     {
       id: 13,
       title: 'Faszienmassage',
+      category: 'Spezialservices',
+      cardText: 'Durch Massage Faszien lockern und schmerzfreie Mobilität unterstützen.',
       description: 'Faszien – das Bindegewebe des Körpers – sind mitentscheidend für die Beweglichkeit eines Tieres. Durch Stress, Verletzungen und Operationen, Schonhaltungen und Bewegungsmangel verkürzen und verhärten sie sich. Die Faszien werden starr und unbeweglich. Steifheit und oft Schmerzen sind die Folge. Bei der Faszienmassage werden diese wieder gelockert zusätzlich Mobilisationsübungen durchgeführt.',
     },
 

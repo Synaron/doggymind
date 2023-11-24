@@ -31,7 +31,6 @@ function Home() {
       <div className="App">
         <Navbar />
         <Slider />
-      
         <ScrollLink to="Intro2" smooth={true} duration={500} offset={-50}>
         <Intro2
           firstWord="Dog"

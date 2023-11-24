@@ -3,7 +3,6 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import '../assets/css/NavBar.css';
 
-
 function Navbar() {
   return (
     <nav>
@@ -26,6 +25,11 @@ function Navbar() {
         <li>
           <Link style={{ color: '#ffffff' }} to="FAQ" smooth={true} duration={500}>
             FAQ
+          </Link>
+        </li>
+        <li>
+          <Link style={{ color: '#ffffff' }} to="Kontakt" smooth={true} duration={500}>
+            Kontakt
           </Link>
         </li>
       </ul>
