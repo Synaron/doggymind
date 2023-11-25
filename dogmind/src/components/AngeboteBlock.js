@@ -1,50 +1,40 @@
-import React from 'react'
-import Row from 'react-bootstrap/esm/Row'; 
-import Col from 'react-bootstrap/esm/Col';
-import HalfCirclePic from '../components/HalfCirclePic';
-import '../assets/css/AngeboteBlock.css';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Row, Col } from 'react-bootstrap'; // Assuming you are using Bootstrap components
+import { Link } from 'react-router-dom'; // Assuming you are using react-router-dom
+import HalfCirclePic from './HalfCirclePic';
 
-// Inside AngeboteBlock component
-function AngeboteBlock({ imageUrl, data, index }) {
-  const titles = data.map(item => item.title);
-  const shouldReverse = index % 2 !== 0; // Determine if HalfCirclePic should be reversed
-
+function AngeboteBlock({ data, Image1, Image2 }) {
   return (
-    <div id="Angebote">
-      <Row>
-        {index % 2 === 0 ? (
-          <>
-            <Col md={4}>
-              </Col>
-            <Col md={4} id="background-angebote">
-              <ul id="title-list">
-                {titles.map((title, idx) => (
-                  <Link to={`/${title}`} className="custom-link">{title}</Link>
-                ))}
-              </ul>
-            </Col>
-            <Col md={4} className={`ml-auto ${shouldReverse ? 'mr-0' : ''}`}>
-              <HalfCirclePic imageUrl={imageUrl} shouldReverse={shouldReverse} />
-            </Col>
-          </>
-        ) : (
-          <>
-            <Col md={4} className={`ml-auto d-flex justify-content-end ${shouldReverse ? 'mr-0' : ''}`}>
-              <HalfCirclePic imageUrl={imageUrl} shouldReverse={shouldReverse} />
-            </Col>
-            <Col md={4} id="background-angebote-reverse">
-              <ul id="title-list-reverse">
-                {titles.map((title, idx) => (
-                  <Link to={`/${title}`} className="custom-link">{title}</Link>
-                ))}
-              </ul>
-            </Col>
-            <Col md={4} id="background-angebote-reverse"></Col>
-          </>
-        )}
-      </Row>
-    </div>
+    <Row>
+      <Col md={3}>
+        <div>
+          <HalfCirclePic image={Image1} />
+        </div>
+      </Col>
+      <Col md={3}>
+        <ul id="title-list">
+          {data.map((item, idx) => (
+            <Link key={idx} to={`/${item.title}`} className="custom-link">
+              {item.title}
+            </Link>
+          ))}
+        </ul>
+      </Col>
+      <Col md={3}>
+        <ul id="title-list">
+          {data.map((item, idx) => (
+            <Link key={idx} to={`/${item.title}`} className="custom-link">
+              {item.title}
+            </Link>
+          ))}
+        </ul>
+      </Col>
+      <Col md={3}>
+        <div>
+          <HalfCirclePic image={Image2} />
+        </div>
+      </Col>
+    </Row>
   );
 }
 

@@ -13,6 +13,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import IntroPic1 from '../../assets/images/Intro1.png';
 import IntroPic2 from '../../assets/images/Intro2.png';
 import HeaderBar from "../HeaderBar";
+import { Navbar } from 'react-bootstrap';
 
 function Home() {
   // Split the trainingData into chunks of 6 for each AngeboteBlock
@@ -28,7 +29,7 @@ function Home() {
 
 
     return (
-      <div className="App">
+      <div className="Home">
         <HeaderBar />
         <Slider />
         <ScrollLink to="Intro2" smooth={true} duration={500} offset={-50}>

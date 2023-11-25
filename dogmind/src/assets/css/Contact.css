@@ -1,15 +1,15 @@
 .background-with-overlay {
     /* Set the background image and create a linear gradient for the color overlay */
-    background: linear-gradient(rgb(246,190,0, 0.5), rgb(246,190,0, 0.5)), url('../images/Alltagstauglich.jpeg');
+    background: linear-gradient(rgb(246,190,0, 0.5), rgb(246,190,0, 0.5)), url('../images/Kontakt.png');
   
     /* Set the size and position of the background image */
     background-size: cover;
-    background-position: right;
+    background-position: center;
   
     /* Set other styles as needed */
     color: #fff; /* Text color on top of the overlay */
 
-    min-height: 70vh;
+    min-height: 80vh;
   }
 
   #Kontakt{

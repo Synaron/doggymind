@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Welpe1 from '../../assets/images/Welpe1.png';
-import Header from '../Header';
+import HeaderImage from '../HeaderImage';
 import IntroSub from '../IntroSub';
 import trainingData from '../../data';
 import IntroPic1 from '../../assets/images/Welpe1.png';
@@ -32,7 +32,7 @@ function WelpenJunghundTraining() {
   return (
     <div>
       <NavbarSub />
-      <Header title="Welpen- und Junghundtraining" imageUrl={Welpe1} />
+      <HeaderImage title="Welpen- und Junghundtraining" imageUrl={Welpe1} />
       <IntroSub
         data={data}
         firstWord=""
