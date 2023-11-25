@@ -10,10 +10,10 @@ function ImageBlock({ image1, image2 }) {
   return (
     <Container className="image-block-container">
       <Row>
-        <Col>
+        <Col className="mt-4">
           <RoundedImage img={image1} />
         </Col>
-        <Col>
+        <Col className="mt-25">
           <RoundedImage img={image2} />
         </Col>
       </Row>

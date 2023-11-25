@@ -44,7 +44,7 @@ function Intro2({
           )}
           <p style={paragraphStyle}>{secondParagraph}</p>
         </Col>
-        <Col style={{ padding: 0 }} md={6}>
+        <Col className="image-block-design" style={{ padding: 0 }} md={6}>
           <ImageBlock image1={image1} image2={image2} />
         </Col>
       </Row>

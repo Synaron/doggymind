@@ -8,8 +8,8 @@ import MedicalTraining from '../../assets/images/MedicalTraining.png'
 import trainingData from '../../data';
 import PfotenHeading from '../PfotenHeading';
 import { Link as ScrollLink } from 'react-scroll';
-import IntroPic1 from '../../assets/images/Intro1.png';
-import IntroPic2 from '../../assets/images/Intro2.png';
+import IntroPic1 from '../../assets/images/Intro/Intro1.png';
+import IntroPic2 from '../../assets/images/Intro/Intro2.png';
 import HeaderBar from "../HeaderBar";
 import FlipCard from '../FlipCard';
 

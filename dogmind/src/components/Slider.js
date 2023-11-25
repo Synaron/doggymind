@@ -1,8 +1,8 @@
 import Carousel from 'react-bootstrap/Carousel';
 import { useState } from 'react';
-import Slider1 from '../assets/images/Slider1.png';
-import Slider2 from '../assets/images/Slider2.png';
-import Slider3 from '../assets/images/Slider3.png';
+import Slider1 from '../assets/images/Slider/Slider1.png';
+import Slider2 from '../assets/images/Slider/Slider2.png';
+import Slider3 from '../assets/images/Slider/Slider3.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/css/Slider.css';
 
@@ -25,14 +25,14 @@ function Slider() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block w-100" src={Slider3} alt="Second slide" />
+        <img className="d-block w-100" src={Slider3} alt="Second slide" style={{ height: '90vh' }} />
         <Carousel.Caption>
           <h3>Alltagstauglichkeit für Jung und Alt</h3>
           <p>Damit ihr Alltagssituation entspannt meistern könnt.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block w-100" src={Slider2} alt="Third slide" />
+        <img className="d-block w-100" src={Slider2} alt="Third slide" style={{ height: '90vh' }} />
         <Carousel.Caption>
           <h3>Spiel und Beschäftigung</h3>
           <p>
