@@ -2,7 +2,6 @@
 import React from 'react';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import { Link } from 'react-router-dom';
-import '../assets/css/NavBar.css';
 
 const NavbarSub = () => {
   const handleClick = () => {

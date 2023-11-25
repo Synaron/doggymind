@@ -15,7 +15,7 @@ function AngeboteCard({ trainingData, categories }) {
   return (
     <div className='card-background'>
       <h1>Weitere Trainings, die dich interessieren könnten:</h1>
-      <Row>
+      <Row class-Name='card-container'>
         {filteredData.map((training) => (
           <Card key={training.id} className={training.id % 2 === 0 ? 'even-card' : 'odd-card'} style={{ width: '18rem' }}>
             <img src={training.imagePath} alt={training.title} /> {/* Update this line */}

@@ -1,16 +1,14 @@
 // WelpenJunghundTraining.js
 
 import React from 'react';
-import Welpe1 from '../../assets/images/Welpe1.png';
-import HeaderImage from '../HeaderImage';
+import HeaderImageCircle from '../HeaderImageCircle';
 import IntroSub from '../IntroSub';
 import trainingData from '../../data';
-import IntroPic1 from '../../assets/images/Welpe1.png';
-import IntroPic2 from '../../assets/images/Welpe2.png';
+import Welpe2 from '../../assets/images/Welpen/Welpe2.png';
 import NavbarSub from '../NavbarSub';
 import AngeboteCards from '../AngeboteCards';
 
-function WelpenJunghundTraining() {
+function WelpenJunghundTraining(imageUrl) {
   // Check if trainingData is defined and is an array
   if (!Array.isArray(trainingData)) {
     console.error("Training data is not an array or is undefined.");
@@ -32,17 +30,11 @@ function WelpenJunghundTraining() {
   return (
     <div>
       <NavbarSub />
-      <HeaderImage title="Welpen- und Junghundtraining" imageUrl={Welpe1} />
+      <HeaderImageCircle HeaderTitle={data.title} imageUrl={Welpe2} altText="Welpe"/>
       <IntroSub
-        data={data}
-        firstWord=""
-        secondWord="Welpen-und Junghund"
-        secondPhrase="training"
         firstParagraph={data.description}
         listStyle={data.contents}
         secondParagraph={data.note}
-        image1={IntroPic1}
-        image2={IntroPic2}
       />
       {/* Pass the category prop to AngeboteCards */}
       <AngeboteCards trainingData={trainingData} categories={['Welpen', 'Alltag']} />

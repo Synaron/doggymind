@@ -2,31 +2,37 @@ import '../../App.css';
 import Slider from "../Slider";
 import Intro2 from "../Intro2";
 import Probleme from '../Probleme';
-import FAQ from '../FAQ';
 import AngeboteBlock from '../AngeboteBlock';
-import Welpe2 from '../../assets/images/Welpe2.png';
-import MedicalTraining from '../../assets/images/MedicalTraining.png';
-import Anschaffung from '../../assets/images/anschaffung.png';
+import Welpe2 from '../../assets/images/Welpen/Welpe2.png'
+import MedicalTraining from '../../assets/images/MedicalTraining.png'
 import trainingData from '../../data';
 import PfotenHeading from '../PfotenHeading';
 import { Link as ScrollLink } from 'react-scroll';
 import IntroPic1 from '../../assets/images/Intro1.png';
 import IntroPic2 from '../../assets/images/Intro2.png';
 import HeaderBar from "../HeaderBar";
-import { Navbar } from 'react-bootstrap';
+import FlipCard from '../FlipCard';
 
 function Home() {
-  // Split the trainingData into chunks of 6 for each AngeboteBlock
-  const chunkedData = [];
-  for (let i = 0; i < trainingData.length; i += 6) {
-    chunkedData.push(trainingData.slice(i, i + 6));
-  }
-  // If the last chunk has fewer than 4 items, move the last item to the previous chunk
-  if (chunkedData.length > 1 && chunkedData[chunkedData.length - 1].length < 3) {
-    const lastItem = chunkedData.pop().pop();
-    chunkedData[chunkedData.length - 1].push(lastItem);
-    }
 
+  const qaPairs = [
+    {
+      question: "Was ist Individualtraining bei Dog Mind?",
+      answer: (
+        <ul>
+          <li>Arbeit ohne Schema F – ich schau mir eure Voraussetzungen und Wünsche an, danach richtet sich der weitere Trainingsablauf.</li>
+          <li>Klassisches Fuß gehen ist dir zu dämlich? Kein Problem, es geht auch anders</li>
+          <li>Ich gehe auf eure Bedürfnisse ein – Stunden nach Bedarf</li>
+          <li>Der Ort des Trainings wird nach Notwendigkeit gewählt – zuhause, im Park usw.</li>
+        </ul>
+      )
+    },
+    // Add more question-answer pairs as needed
+    {
+      question: "Wie sieht unsere erste Einzelstunde aus?",
+      answer: "In einem ausführlichen Gespräch lerne ich dich und deinen Hund kennen, du kannst mir all deine Fragen stellen und wir starten mit den ersten Trainingsschritten. Training soll Spaß machen und nicht in Stress und Druck ausarten."
+    }
+  ];
 
     return (
       <div className="Home">
@@ -49,19 +55,15 @@ function Home() {
         </ScrollLink>
 
         <PfotenHeading title="Meine Angebote" id="Angebote" />
-        {chunkedData.map((chunk, index) => (
-        <ScrollLink key={index} to={`Angebote${index}`} smooth={true} duration={500} offset={-50}>
-          <AngeboteBlock
-            imageUrl={index % 2 === 0 ? Welpe2 : index === 2 ? Anschaffung : MedicalTraining}
-            data={chunk} // Pass the entire chunk of data
-            index={index}
-          />
+
+        <ScrollLink smooth={true} duration={500} offset={-50}>
+          <AngeboteBlock data={trainingData} Image1={Welpe2} Image2={MedicalTraining}/>
         </ScrollLink>
-      ))}
+      
       
         <ScrollLink to="FAQ" smooth={true} duration={500} offset={-50}>
-          <FAQ id="faq" />
-        </ScrollLink>
+        <FlipCard qaPairs={qaPairs} />
+      </ScrollLink>
       </div>
     );
   }

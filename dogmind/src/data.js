@@ -1,6 +1,6 @@
 // data.js
-import welpe11 from './assets/images/welpe11.png';
-import Welpe2 from './assets/images/Welpe2.png';
+import welpe11 from './assets/images/Welpen/welpe11.png';
+import Welpe2 from './assets/images/Welpen/Welpe2.png';
 import Alltagstauglich from './assets/images/Alltagstauglich.png';
 import MedicalTraining from './assets/images/MedicalTraining.png';
 import verhalten from './assets/images/verhalten.png';

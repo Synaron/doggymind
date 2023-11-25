@@ -1,16 +1,14 @@
 import React from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 import '../assets/css/FAQ.css';
-import Col from 'react-bootstrap/esm/Col';
-import Row from 'react-bootstrap/esm/Row';
-import Spaziergang from '../assets/images/spaziergang.png';
+
 
 function FAQ() {
   return (
-    <Row>
-      <h1>FAQ</h1>
-    <Col md={6} className="faq-col">
+    
+   
     <div id="FAQ">
+    <h1>FAQ</h1>
     <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
         <Accordion.Header className="accordion-header">Was ist Individualtraining bei Dog Mind?</Accordion.Header>
@@ -34,11 +32,8 @@ function FAQ() {
       </Accordion.Item>
     </Accordion>
     </div>
-    </Col>
-    <Col md={6} className="img-col">
-    <img src={Spaziergang} alt="Spaziergang" />
-    </Col>
-    </Row>
+  
+    
   );
 }
 

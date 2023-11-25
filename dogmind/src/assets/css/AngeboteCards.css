@@ -1,5 +1,11 @@
 /* AngeboteCards.css */
-  .card:nth-child(odd) {
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin-left: 2%;
+}
+
+.card:nth-child(odd) {
     background-color: black;
     color: white;
   }

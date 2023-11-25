@@ -1,5 +1,5 @@
 #title-list {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     list-style-type:none;
     color: black;
     display: flex;
@@ -14,7 +14,7 @@
 
 #title-list-reverse {
     color:rgb(246,190,0, 0.7);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     list-style-type:none;
     display: flex;
     flex-direction: column; /* Align items horizontally */

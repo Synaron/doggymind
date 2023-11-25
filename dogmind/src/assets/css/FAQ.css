@@ -9,13 +9,20 @@
 
 #FAQ {
   margin-top: 2rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0;
+  background-color: black;
+  color: white;
   }
 
-  .img-col{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-  }
+
+
+#Heading-FAQ{
+color: white;
+}
+
+.faq-row{
+  background-color:rgb(246,190,0,0.7);;
+}
