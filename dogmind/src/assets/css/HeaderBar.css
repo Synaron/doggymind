@@ -1,0 +1,7 @@
+#HeaderBar{
+    background-color: black;
+    display: flex; /* Use flexbox to arrange items horizontally */
+    justify-content: space-between; /* Add space between logo and navbar */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Add padding for better visual appearance */
+}

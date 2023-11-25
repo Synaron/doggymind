@@ -2,9 +2,11 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import '../assets/css/NavBar.css';
+import Logo from './Logo';
 
 function Navbar() {
   return (
+    <>
     <nav>
       <ul>
         <li>
@@ -34,6 +36,7 @@ function Navbar() {
         </li>
       </ul>
     </nav>
+    </>
   );
 }
 
