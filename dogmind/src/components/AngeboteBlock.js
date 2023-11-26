@@ -20,7 +20,7 @@ function AngeboteBlock({ data, Image1, Image2 }) {
     navigate(`/${title}`);
   };
   return (
-    <Row className="m-0 p-0">
+    <Row id="Angebote" className="m-0 p-0">
       <Col md={4} id="background-angebote">
         <ul id="title-list">
           {firstHalf.map((item, idx) => (

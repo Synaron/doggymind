@@ -40,7 +40,7 @@ function Home() {
       <div className="Home">
         <HeaderBar />
         <Slider />
-        <ScrollLink to="Intro2" smooth={true} duration={500} offset={-50}>
+        <ScrollLink to="Intro2" smooth={true} duration={0} offset={-50}>
         <Intro2
           firstWord="Dog"
           secondWord="mind"
@@ -52,18 +52,15 @@ function Home() {
           />
         </ScrollLink>
 
-        <ScrollLink to="Probleme" smooth={true} duration={500} offset={-50}>
+        <ScrollLink to="Probleme" smooth={true} duration={0} offset={-50}>
         <Probleme />
         </ScrollLink>
-
+        <ScrollLink to="Angebote" smooth={true} duration={0} offset={-50}>
         <PfotenHeading title="Meine Angebote" id="Angebot" />
-
-        <ScrollLink smooth={true} duration={500} offset={-50}>
           <AngeboteBlock data={trainingData} Image1={Welpe2} Image2={MedicalTraining}/>
         </ScrollLink>
-      
-      
-        <ScrollLink to="faq" smooth={true} duration={500} offset={-50}>
+    
+        <ScrollLink to="heading-faq" smooth={true} duration={0} offset={-50}>
         <FlipCard qaPairs={qaPairs} highlightedWords={highlightedWords}/>
       </ScrollLink>
       </div>

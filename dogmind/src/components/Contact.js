@@ -3,7 +3,7 @@ import '../assets/css/Contact.css';
 
 function Contact() {
   return (
-    <div className="background-with-overlay">
+    <div id="Kontakt" className="background-with-overlay">
         <div className="Hintergrund-Kontakt">
             <div className="Content-Kontakt">
             <h2 id="Kontakt">Kontakt</h2>

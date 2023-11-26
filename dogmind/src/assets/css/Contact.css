@@ -4,12 +4,12 @@
   
     /* Set the size and position of the background image */
     background-size: cover;
-    background-position: center;
+    background-position: top;
   
     /* Set other styles as needed */
     color: #fff; /* Text color on top of the overlay */
 
-    min-height: 80vh;
+    min-height: 70vh;
   }
 
   #Kontakt{
@@ -28,4 +28,5 @@
   
   .Content-Kontakt {
     padding: 20%;
+    height: 80vh;
   }

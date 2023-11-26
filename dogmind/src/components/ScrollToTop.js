@@ -8,7 +8,7 @@ function ScrollToTop() {
 
   useEffect(() => {
     if (location !== prevLocation.current) {
-      window.scrollTo(0, 0);
+      window.scrollTo({ top: 0, behavior: 'instant' });
       prevLocation.current = location;
     }
   }, [location]);
