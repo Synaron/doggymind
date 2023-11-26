@@ -64,11 +64,13 @@
   .angebote-button:hover {
     background-color: rgb(246,190,0, 0.7); /* Change background color on hover */
     color: white; /* Change text color on hover */
+    cursor: url('../images/Pfoten/paw_white.png') 12 12, auto;
   }
 
   .angebote-button-reverse:hover {
     background-color: black; /* Change background color on hover */
     color: white; /* Change text color on hover */
+    cursor: url('../images/Pfoten/paw_white.png') 12 12, auto;
   }
   .button.angebote-button-reverse:hover {
     background-color: rgb(246,190,0); /* Change background color on hover */

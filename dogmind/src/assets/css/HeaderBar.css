@@ -50,5 +50,6 @@ nav ul li a {
   color: white; /* Set link color to white */
   font-family: 'Anton', sans-serif;
   font-size: 1.3rem;
+  cursor: url('../images/Pfoten/paw_white.png') 12 12, auto;
 }
 
