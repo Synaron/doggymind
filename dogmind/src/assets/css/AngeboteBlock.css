@@ -1,7 +1,6 @@
 #title-list {
     font-size: 1.2rem;
     list-style-type:none;
-    color: black;
     display: flex;
     flex-direction: column; /* Align items horizontally */
     align-items: center; /* Center items vertically */
@@ -28,10 +27,12 @@
 #background-angebote{
     background-color: rgb(246,190,0, 0.7);
     text-align: center;
+    border-radius: 20px;
 }
 
 #background-angebote-reverse{
     background-color: black;
+    border-radius: 20px;
 }
 
 .custom-link {
@@ -44,3 +45,52 @@
     color: rgb(246, 190, 0, 0.7); /* Set the desired color for reversed list */
     border-color: white;
   }
+
+  .angebote-button-reverse{
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 2%;
+    margin: 2%;
+  }
+
+  .angebote-button{
+    background-color: transparent;
+    border: 1px solid #ffffff; /* Set a 1px white border */
+    border-radius: 5px;
+    padding: 2%;
+    margin: 2%;
+  }
+
+  .angebote-button:hover {
+    background-color: rgb(246,190,0, 0.7); /* Change background color on hover */
+    color: white; /* Change text color on hover */
+  }
+
+  .angebote-button-reverse:hover {
+    background-color: rgb(246,190,0, ); /* Change background color on hover */
+    color: white; /* Change text color on hover */
+    border: 1px solid #ffffff; /* Set a 1px white border */
+}
+
+  #title-list-reverse .angebote-button {
+    color: rgba(246, 190, 0, 0.7) !important; /* Add !important to override other styles */
+  }
+
+  #title-list-reverse .angebote-button:hover {
+    color: white !important; /* Add !important to override other styles */
+  }
+  #angebote-img{
+    border: 3px solid white; /* Adjust the border width and color as needed */
+    border-radius: 20px; /* Adjust the border-radius to create rounded corners */
+    overflow: hidden; /* Ensure that the border doesn't affect the image overflow */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:0;
+    width:100%;
+  }
+
+  #background-angebote,
+#background-angebote-reverse {
+    flex-grow: 1;
+}
