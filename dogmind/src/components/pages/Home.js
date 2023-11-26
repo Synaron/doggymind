@@ -53,11 +53,9 @@ function Home() {
         <ScrollLink to="Probleme" smooth={true} duration={500} offset={-50}>
         <Probleme />
         </ScrollLink>
-
-        <PfotenHeading title="Meine Angebote" id="Angebote" />
-
         <ScrollLink smooth={true} duration={500} offset={-50}>
-          <AngeboteBlock data={trainingData} Image1={Welpe2} Image2={MedicalTraining}/>
+        <PfotenHeading title="Meine Angebote"/>
+        <AngeboteBlock data={trainingData} Image1={Welpe2} Image2={MedicalTraining}/>
         </ScrollLink>
       
       
