@@ -2,7 +2,8 @@
 .card-container {
   display: flex;
   justify-content: center;
-  margin-left: 2%;
+  align-self: center;
+  margin: 0;
 }
 
 .card:nth-child(odd) {

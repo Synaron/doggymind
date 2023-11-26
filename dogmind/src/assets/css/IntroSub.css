@@ -1,0 +1,37 @@
+/* IntroSub.css */
+
+.right-column {
+    background-color: black;
+    color: white;
+    padding: 5%;
+  }
+
+  .left-column {
+    padding: 5%;
+  }
+  
+  .right-column h3 {
+    color: white;
+    text-align: center;
+  }
+  
+  .right-column ul {
+    list-style: none;
+    color: white;
+    text-align: left;
+  }
+
+  .right-column li .icon {
+    display: inline-block;
+    width: 16px; /* Set the desired width */
+    height: 16px; /* Set the desired height */
+    margin-right: 8px; /* Adjust the spacing between the icon and text */
+    background: url('../images/Pfoten/paw_white.png') no-repeat; /* Replace with the path to your uploaded icon */
+    background-size: contain; /* Adjust how the icon is sized within its container */
+  }
+  
+  #intro-sub-note{
+    color: white;
+    padding: 4%;
+    font-style: italic;
+  }

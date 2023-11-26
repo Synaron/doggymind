@@ -67,11 +67,25 @@
   }
 
   .angebote-button-reverse:hover {
-    background-color: rgb(246,190,0, ); /* Change background color on hover */
+    background-color: rgb(246,190,0); /* Change background color on hover */
     color: white; /* Change text color on hover */
     border: 1px solid #ffffff; /* Set a 1px white border */
 }
 
+#title-list-reverse .angebote-button-reverse {
+  color: white; /* Set the default text color for reverse title buttons */
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 2%;
+  margin: 2%;
+}
+
+#title-list-reverse .angebote-button-reverse:hover {
+  background-color: rgba(246, 190, 0); /* Change background color on hover to yellow */
+  color: white; /* Change text color on hover to white */
+  border: 1px solid white; /* Set a 1px white border on hover */
+}
   #title-list-reverse .angebote-button {
     color: rgba(246, 190, 0, 0.7) !important; /* Add !important to override other styles */
   }

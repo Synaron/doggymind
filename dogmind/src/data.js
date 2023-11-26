@@ -19,7 +19,8 @@ const trainingData = [
       category: 'Welpen',
       imagePath: welpe11,
       cardText: 'Wir legen miteinander den richtigen Grundstein in der wichtigsten Entwicklungsphase.',
-      description: 'Einen süssen Welpen zu erziehen ist nicht immer so einfach...',
+      descriptionTitle: 'Welpentraining: Ein Schlüssel für eine harmonische Mensch-Hund-Beziehung.',
+      description: 'Die Erziehung eines Welpen legt den Grundstein für ein erfülltes Zusammenleben. Beginne das Training frühzeitig, indem du grundlegende Kommandos wie "Sitz" und "Platz" einführen und positive Verstärkung nutzen. Sozialisation ist ebenso wichtig; ermögliche deinem Welpen Begegnungen mit verschiedenen Umgebungen und Artgenossen. Die Stubenreinheit zu lehren erfordert Geduld und Konsistenz. Belohne  gutes Verhalten und sei stets liebevoll. Durch klare Regeln und regelmäßiges Training schaffst du eine vertrauensvolle Basis für eine lebenslange Freundschaft. Soweit die Theorie, doch einen süssen Welpen zu erziehen, ist nicht immer so einfach... Deshalb unterstütze ich dich gerne dabei!',
       contents: [
         'Stubenreinheit',
         'Alleine bleiben',
