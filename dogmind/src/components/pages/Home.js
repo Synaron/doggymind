@@ -56,14 +56,14 @@ function Home() {
         <Probleme />
         </ScrollLink>
 
-        <PfotenHeading title="Meine Angebote" id="Angebote" />
+        <PfotenHeading title="Meine Angebote" id="Angebot" />
 
         <ScrollLink smooth={true} duration={500} offset={-50}>
           <AngeboteBlock data={trainingData} Image1={Welpe2} Image2={MedicalTraining}/>
         </ScrollLink>
       
       
-        <ScrollLink to="FAQ" smooth={true} duration={500} offset={-50}>
+        <ScrollLink to="faq" smooth={true} duration={500} offset={-50}>
         <FlipCard qaPairs={qaPairs} highlightedWords={highlightedWords}/>
       </ScrollLink>
       </div>

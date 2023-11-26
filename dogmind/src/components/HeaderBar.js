@@ -21,17 +21,17 @@ const HeaderBar = () => {
                   </Link>
                 </li>
                 <li>
-          <Link style={{ color: '#ffffff' }} to="Probleme" smooth={true} duration={500}>
+          <Link style={{ color: '#ffffff' }} to="Problem" smooth={true} duration={500}>
             Häufige Probleme
           </Link>
         </li>
         <li>
-          <Link style={{ color: '#ffffff' }} to="Angebote" smooth={true} duration={500}>
+          <Link style={{ color: '#ffffff' }} to="Angebot" smooth={true} duration={500}>
             Mein Training
           </Link>
         </li>
         <li>
-          <Link style={{ color: '#ffffff' }} to="FAQ" smooth={true} duration={500}>
+          <Link style={{ color: '#ffffff' }} to="faq" smooth={true} duration={500}>
             FAQ
           </Link>
         </li>

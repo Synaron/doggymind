@@ -8,15 +8,17 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Datenschutz from './components/pages/Datenschutz';
 import Impressum from './components/pages/Impressum';
+import ScrollToTop from './components/ScrollToTop.js';
 
 
 function App() {
 
   return (
+  
+    
     <Router>
       <div className="App">
-
-
+      <ScrollToTop />
         <Routes>
           {/* Define routes for the home page and subpages */}
           <Route path="/" element={<Home />} />
@@ -29,6 +31,7 @@ function App() {
         <Footer />
       </div>
     </Router>
+    
   );
 }
 
