@@ -1,9 +1,17 @@
-// FlipCard.js
 import React from 'react';
 import '../assets/css/FlipCard.css';
 import { Row, Col } from 'react-bootstrap';
 
-const FlipCard = ({ qaPairs }) => {
+// Inside your FlipCard component
+const FlipCard = ({ qaPairs, highlightedWords }) => {
+  const highlightWord = (text) => {
+    return highlightedWords.includes(text) ? (
+      <span className="highlighted-text">{text}</span>
+    ) : (
+      text
+    );
+  };
+
   return (
     <>
       <h1 id="heading-faq">FAQ</h1>
@@ -12,10 +20,10 @@ const FlipCard = ({ qaPairs }) => {
           <Col key={index} xs={12} md={6} lg={4} className="flip-card">
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                {qaPair.question}
+                {highlightWord(qaPair.question)}
               </div>
               <div className="flip-card-back">
-                {qaPair.answer}
+                {highlightWord(qaPair.answer)}
               </div>
             </div>
           </Col>

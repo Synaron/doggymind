@@ -8,18 +8,14 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Datenschutz from './components/pages/Datenschutz';
 import Impressum from './components/pages/Impressum';
-import HeaderBar from './components/HeaderBar';
-import NavBarSub from './components/NavbarSub';
-import { useIsHomePage } from './components/useIsHomePage';
+
 
 function App() {
-  const isHomePage = useIsHomePage();
 
   return (
     <Router>
       <div className="App">
-        {/* Conditionally render the navigation bar */}
-        {isHomePage ? <HeaderBar /> : <NavBarSub />}
+
 
         <Routes>
           {/* Define routes for the home page and subpages */}

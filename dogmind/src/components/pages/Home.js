@@ -33,6 +33,8 @@ function Home() {
       answer: "In einem ausführlichen Gespräch lerne ich dich und deinen Hund kennen, du kannst mir all deine Fragen stellen und wir starten mit den ersten Trainingsschritten. Training soll Spaß machen und nicht in Stress und Druck ausarten."
     }
   ];
+  const highlightedWords = ['Einzelstunde', 'Dog Mind']; // Add any other words you want to highlight
+
 
     return (
       <div className="Home">
@@ -53,14 +55,16 @@ function Home() {
         <ScrollLink to="Probleme" smooth={true} duration={500} offset={-50}>
         <Probleme />
         </ScrollLink>
+
+        <PfotenHeading title="Meine Angebote" id="Angebote" />
+
         <ScrollLink smooth={true} duration={500} offset={-50}>
-        <PfotenHeading title="Meine Angebote"/>
-        <AngeboteBlock data={trainingData} Image1={Welpe2} Image2={MedicalTraining}/>
+          <AngeboteBlock data={trainingData} Image1={Welpe2} Image2={MedicalTraining}/>
         </ScrollLink>
       
       
         <ScrollLink to="FAQ" smooth={true} duration={500} offset={-50}>
-        <FlipCard qaPairs={qaPairs} />
+        <FlipCard qaPairs={qaPairs} highlightedWords={highlightedWords}/>
       </ScrollLink>
       </div>
     );

@@ -42,11 +42,16 @@
     background-color: rgb(246,190,0);
     color: black;
     transform: rotateY(180deg);
+    padding: 5%;
+    text-align: justify;
   }
 
   #heading-faq{
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding:0;
+  }
+  .highlighted-text {
+    color: rgb(246,190,0);
   }
   

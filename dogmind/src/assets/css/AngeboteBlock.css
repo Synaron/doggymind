@@ -67,13 +67,17 @@
   }
 
   .angebote-button-reverse:hover {
+    background-color: black; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+  }
+  .button.angebote-button-reverse:hover {
     background-color: rgb(246,190,0); /* Change background color on hover */
     color: white; /* Change text color on hover */
     border: 1px solid #ffffff; /* Set a 1px white border */
 }
 
 #title-list-reverse .angebote-button-reverse {
-  color: white; /* Set the default text color for reverse title buttons */
+  color: white !important;
   background-color: transparent;
   border: 1px solid white;
   border-radius: 5px;
