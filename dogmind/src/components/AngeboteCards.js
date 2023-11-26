@@ -15,13 +15,13 @@ function AngeboteCard({ trainingData, categories }) {
   return (
     <div className='card-background'>
       <h1>Weitere Trainings, die dich interessieren könnten:</h1>
-      <Row class-Name='card-container'>
+      <Row className='card-container'>
         {filteredData.map((training) => (
           <Card key={training.id} className={training.id % 2 === 0 ? 'even-card' : 'odd-card'} style={{ width: '18rem' }}>
             <img src={training.imagePath} alt={training.title} /> {/* Update this line */}
             <Card.Body>
               <Card.Title>{training.title}</Card.Title>
-              <Card.Text>{training.cardText}</Card.Text>
+              <Card.Text className="text-white">{training.cardText}</Card.Text>
               <Button variant="primary">Mehr erfahren</Button>
             </Card.Body>
           </Card>

@@ -1,20 +1,53 @@
 /* AngeboteCards.css */
+.card-background{
+  margin:2%;
+}
 .card-container {
   display: flex;
   justify-content: center;
   align-self: center;
   margin: 0;
+  padding:0;
 }
 
-.card:nth-child(odd) {
-    background-color: black;
-    color: white;
-  }
-  
-  .card:nth-child(even) {
-    background-color:  rgb(246,190,0, 0.7);
-    color: black;
-  }
+/* Update the CSS for odd cards */
+.odd-card {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.odd-card .card-text {
+  color: white;
+}
+
+.even-card .btn-primary {
+  background-color: transparent; /* default button color for odd cards */
+}
+
+.odd-card .btn-primary {
+  background-color: black; /* default button color for odd cards */
+}
+
+.odd-card .btn-primary:hover {
+  background-color: #ffcc00; /* lighter shade of yellow on hover */
+}
+
+.even-card .btn-primary:hover {
+  background-color: black; /* lighter shade of yellow on hover */
+}
+
+
+/* Update the CSS for even cards */
+.even-card {
+  background-color: rgb(246, 190, 0, 0.7);
+  color: black;
+}
+
+.even-card .btn-primary {
+  background-color: transparent; /* button color for even cards */
+}
+
   
   .card-body {
     display: flex;
@@ -26,13 +59,14 @@
     margin-bottom: 10px;
   }
   
+  
   .btn-primary {
     background-color: black; /* default button color for odd cards */
     border: none;
   }
   
   .card:nth-child(even) .btn-primary {
-    background-color: yellow; /* button color for even cards */
+    background-color: transparent; /* button color for even cards */
   }
   
   .btn-primary:hover {

@@ -11,6 +11,7 @@ import hundkind from './assets/images/hundkind.jpg';
 import hundmithandicap from './assets/images/hundmithandicap.png';
 import faszien from './assets/images/faszien.jpg';
 import anschaffung from './assets/images/anschaffung.png'
+import spiel from './assets/images/Spiel.png'
 
 const trainingData = [
     {
@@ -109,6 +110,7 @@ const trainingData = [
       id: 6,
       title: 'Spiel und Beschäftigung',
       category: 'Alltag',
+      imagePath: spiel,
       cardText: 'Sinnvolle Beschäftigung für Ausdauer und Köpfchen.',
       description: 'Es gibt viele Möglichkeiten unseren geliebten Vierbeiner zu beschäftigen. Am wichtigsten ist es, dass ihr beide Spaß habt. Deshalb finden wir gemeinsam die für euch ideale Beschäftigung.',
       contents: [
