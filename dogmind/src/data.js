@@ -16,7 +16,7 @@ import spiel from './assets/images/Spiel.png'
 const trainingData = [
     {
       id: 1,
-      title: 'Welpen und Junghundtraining',
+      title: 'Welpen-und-Junghundtraining',
       category: 'Welpen',
       imagePath: welpe11,
       cardText: 'Wir legen miteinander den richtigen Grundstein in der wichtigsten Entwicklungsphase.',

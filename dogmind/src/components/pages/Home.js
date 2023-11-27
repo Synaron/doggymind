@@ -6,13 +6,13 @@ import AngeboteBlock from '../AngeboteBlock';
 import Welpe2 from '../../assets/images/Welpen/Welpe2.png'
 import MedicalTraining from '../../assets/images/MedicalTraining.png'
 import trainingData from '../../data';
-import PfotenHeading from '../PfotenHeading';
 import { Link as ScrollLink } from 'react-scroll';
 import IntroPic1 from '../../assets/images/Intro/Intro1.png';
 import IntroPic2 from '../../assets/images/Intro/Intro2.png';
 import HeaderBar from "../HeaderBar";
 import FlipCard from '../FlipCard';
-
+import { Col
+ } from 'react-bootstrap';
 function Home() {
 
   const qaPairs = [
@@ -56,7 +56,9 @@ function Home() {
         <Probleme />
         </ScrollLink>
         <ScrollLink to="Angebote" smooth={true} duration={0} offset={-50}>
-        <PfotenHeading title="Meine Angebote" id="Angebot" />
+        <Col sm={4}>
+        <h1 id="Angebot" >Meine Angebote</h1>
+        </Col>
           <AngeboteBlock data={trainingData} Image1={Welpe2} Image2={MedicalTraining}/>
         </ScrollLink>
     

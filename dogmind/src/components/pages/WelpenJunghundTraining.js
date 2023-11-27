@@ -29,7 +29,7 @@ function WelpenJunghundTraining() {
   }
 
   return (
-    <div>
+    <div id="welpenJunghundID">
       <NavbarSub />
       <HeaderImageCircle HeaderTitle={firstTraining.title} imageUrl={Welpe2} altText="Welpe" />
       <IntroSub

@@ -10,28 +10,23 @@ import Datenschutz from './components/pages/Datenschutz';
 import Impressum from './components/pages/Impressum';
 import ScrollToTop from './components/ScrollToTop.js';
 
-
 function App() {
-
   return (
-  
-    
     <Router>
       <div className="App">
-      <ScrollToTop />
+        <ScrollToTop />
         <Routes>
           {/* Define routes for the home page and subpages */}
           <Route path="/" element={<Home />} />
           <Route path="/datenschutz" element={<Datenschutz />} />
           <Route path="/impressum" element={<Impressum />} />
-          <Route path="/Welpen und Junghundtraining" element={<WelpenJunghundTraining data={trainingData} />} />
+          <Route path="/Welpen-und-Junghundtraining" element={<WelpenJunghundTraining data={trainingData} />} />
         </Routes>
 
         <Contact />
         <Footer />
       </div>
     </Router>
-    
   );
 }
 
