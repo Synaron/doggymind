@@ -18,21 +18,21 @@ function Slider() {
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
-      <img className="d-block w-100" src={Slider1} alt="First slide" style={{ height: '90vh' }} />
+      <img className="d-block w-100" src={Slider1} alt="First slide" style={{ height: '85vh' }} />
         <Carousel.Caption>
           <h3>Individualtraining</h3>
           <p>Das Hundetraining wird an eure Voraussetzungen und Wünsche angepasst.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block w-100" src={Slider3} alt="Second slide" style={{ height: '90vh' }} />
+        <img className="d-block w-100" src={Slider3} alt="Second slide" style={{ height: '85vh' }} />
         <Carousel.Caption>
           <h3>Alltagstauglichkeit für Jung und Alt</h3>
           <p>Damit ihr Alltagssituation entspannt meistern könnt.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block w-100" src={Slider2} alt="Third slide" style={{ height: '90vh' }} />
+        <img className="d-block w-100" src={Slider2} alt="Third slide" style={{ height: '85vh' }} />
         <Carousel.Caption>
           <h3>Spiel und Beschäftigung</h3>
           <p>

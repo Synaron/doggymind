@@ -1,26 +1,41 @@
-import React from 'react';
-import '../assets/css/HeaderBar.css'; // Import your CSS file for styling
-import Test1 from '../assets/images/Test1.png';
+import React, { useEffect, useState } from 'react';
+import '../assets/css/HeaderBar.css';
+import Test6 from '../assets/images/Test6.png';
 import { Link } from 'react-scroll';
 import { Container, Row, Col } from 'react-bootstrap';
 
 const HeaderBar = () => {
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setScrolling(scrollTop > 0); // Change the scroll threshold to 0 for immediate change
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="header">
+    <header className={`header ${scrolling ? 'scrolling' : ''} ${scrolling ? 'transparent' : ''}`}>
       <Container>
-        <Row className= "d-flex align-items-center">
+        <Row className="d-flex align-items-center">
           <Col md={3} className="logo">
-            <img src={Test1} alt="Logo dogmind" />
+            <img src={Test6} alt="Logo dogmind" />
           </Col>
           <Col md={9}>
-          <nav>
-            <ul>
-              <li>
-                <Link style={{ color: '#ffffff' }} to="Intro2" smooth={true} duration={500}>
-                  Über mich
-                </Link>
-              </li>
-              <li>
+            <nav>
+              <ul>
+                <li>
+                  <Link style={{ color: '#ffffff' }}  to="Intro2" smooth={true} duration={500}>
+                    Über mich
+                  </Link>
+                </li>
+                <li>
                 <Link style={{ color: '#ffffff' }} to="Probleme" smooth={true} duration={500}>
                   Häufige Probleme
                 </Link>
@@ -40,8 +55,8 @@ const HeaderBar = () => {
                   Kontakt
                 </Link>
               </li>
-            </ul>
-          </nav>
+              </ul>
+            </nav>
           </Col>
         </Row>
       </Container>

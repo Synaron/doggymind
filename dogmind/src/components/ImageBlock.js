@@ -28,7 +28,7 @@ function ImageBlock({ image1, image2 }) {
 
   return (
     <Container className="image-block-container" style={customStyle.imageBlockContainer}>
-      <Row>
+      <Row className='p-5'>
         <Col className="mt-4">
           <RoundedImage img={image1} style={customStyle} />
         </Col>

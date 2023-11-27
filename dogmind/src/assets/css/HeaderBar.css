@@ -1,55 +1,52 @@
 /* HeaderBar.css */
 
 .header {
-    background-color: black;
-    color: #fff;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    height: 10vh;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo img {
-    width: 130px;
-    height: auto;
-  
-  }
-  
-  /* Navbar.css */
-nav {
   background-color: black;
-  padding: 10px; /* Add padding for better visual appearance */
-  display: flex; /* Use flexbox to align items */
-  justify-content: center; /* Align items along the main axis with space between them */
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 15vh;
+}
+
+.logo {
+  display: flex;
   align-items: center;
-  height: 10vh; /* Adjust the height as needed */
-  
+}
+
+.logo img {
+  width: auto;
+  height: 15vh;
+
+}
+
+/* Navbar.css */
+nav {
+background-color: black;
+display: flex; /* Use flexbox to align items */
+justify-content: center; /* Align items along the main axis with space between them */
+align-items: center;
+height: 15vh; /* Adjust the height as needed */
+
 }
 
 nav ul {
-  list-style-type: none; /* Remove list styling */
-  margin-right: 4rem;
-  display: flex; 
-  margin-bottom: 0;
-  }
-
-nav ul li {
-  margin-right: 0rem; /* Add margin between list items */
-  padding-right: 2rem;
-  display:flex;
-  }
-
-nav ul li a {
-  text-decoration: none; /* Remove underline */
-  color: white; /* Set link color to white */
-  font-family: 'Anton', sans-serif;
-  font-size: 1.3rem;
-  cursor: url('../images/Pfoten/paw_white.png') 12 12, auto;
+list-style-type: none; /* Remove list styling */
+display: flex; 
+margin-bottom: 0;
 }
 
+nav ul li {
+margin-right: 0rem; /* Add margin between list items */
+padding-right: 6rem;
+display:flex;
+}
+
+nav ul li a {
+text-decoration: none; /* Remove underline */
+color: white; /* Set link color to white */
+font-family: 'Anton', sans-serif;
+font-size: 1.3rem;
+cursor: url('../images/Pfoten/paw_white.png') 12 12, auto;
+}

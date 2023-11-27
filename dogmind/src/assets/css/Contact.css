@@ -9,7 +9,7 @@
     /* Set other styles as needed */
     color: #fff; /* Text color on top of the overlay */
 
-    min-height: 70vh;
+    height: 70vh;
   }
 
   #Kontakt{
@@ -20,7 +20,11 @@
     background-color: rgb(0,0,0, 0.7);
     margin-right:50%;
     padding-left: 5%;
+    height: 70vh;
+    margin-top:0;
+    padding-top:0;
   }
+
 
   .Kontakt-Absatz {
     color: white;
