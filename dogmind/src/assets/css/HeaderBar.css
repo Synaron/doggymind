@@ -13,6 +13,10 @@
 .logo {
   display: flex;
   align-items: center;
+  justify-content: center;
+  background-color: black;
+  margin:0;
+  padding:0;
 }
 
 .logo img {
@@ -28,7 +32,7 @@ display: flex; /* Use flexbox to align items */
 justify-content: center; /* Align items along the main axis with space between them */
 align-items: center;
 height: 15vh; /* Adjust the height as needed */
-
+width:auto;
 }
 
 nav ul {

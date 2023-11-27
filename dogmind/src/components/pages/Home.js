@@ -56,10 +56,8 @@ function Home() {
         <Probleme />
         </ScrollLink>
         <ScrollLink to="Angebote" smooth={true} duration={0} offset={-50}>
-        <Col sm={4}>
-        <h1 id="Angebot" >Meine Angebote</h1>
-        </Col>
-          <AngeboteBlock data={trainingData} Image1={Welpe2} Image2={MedicalTraining}/>
+          <h1 id="Angebot" className='d-flex justify-content-center mt-5 p-5' >Meine Angebote</h1>
+           <AngeboteBlock data={trainingData} Image1={Welpe2} Image2={MedicalTraining}/>
         </ScrollLink>
     
         <ScrollLink to="heading-faq" smooth={true} duration={0} offset={-50}>

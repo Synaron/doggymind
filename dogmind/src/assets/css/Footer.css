@@ -3,8 +3,12 @@
   display: flex;
   background-color: black;
   padding: 10px;
-  align-items: center; /* Align items vertically in the center */
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
+
 
 .footer-column {
   flex: 1;

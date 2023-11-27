@@ -1,13 +1,13 @@
 .flip-card-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 20px;
 }
 .flip-card {
     perspective: 1000px;
-    width: 600px;
-    height: 300px;
+    width: 800px;
+    height: 400px;
     transition: transform 2s;
   }
   
@@ -31,6 +31,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.3rem;
   }
   
   .flip-card-front {
@@ -49,7 +50,7 @@
   #heading-faq{
     margin-top: 2rem;
     margin-bottom: 2rem;
-    padding:0;
+    padding:3%;
   }
   .highlighted-text {
     color: rgb(246,190,0);

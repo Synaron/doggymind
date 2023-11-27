@@ -1,36 +1,32 @@
 .background-with-overlay {
-    /* Set the background image and create a linear gradient for the color overlay */
-    background: linear-gradient(rgb(246,190,0, 0.5), rgb(246,190,0, 0.5)), url('../images/Kontakt.png');
-  
-    /* Set the size and position of the background image */
-    background-size: cover;
-    background-position: top;
-  
-    /* Set other styles as needed */
-    color: #fff; /* Text color on top of the overlay */
+  /* Set the background image and create a linear gradient for the color overlay */
+  background: linear-gradient(rgb(246, 190, 0, 0.5), rgb(246, 190, 0, 0.5)), url('../images/Kontakt.png');
 
-    height: 70vh;
-  }
+  /* Set the size and position of the background image */
+  background-size: cover;
+  background-position: top;
 
-  #Kontakt{
-    padding-top: 8%;
-  }
+  /* Set other styles as needed */
+  color: #fff; /* Text color on top of the overlay */
+  height: 100vh;
+}
 
-  .Hintergrund-Kontakt{
-    background-color: rgb(0,0,0, 0.7);
-    margin-right:50%;
-    padding-left: 5%;
-    height: 70vh;
-    margin-top:0;
-    padding-top:0;
-  }
+#Kontakt {
+  padding-top: 8%;
+  font-size: 3rem;
+}
+
+.Container {
+  display: flex;
+}
 
 
-  .Kontakt-Absatz {
-    color: white;
-  }
-  
-  .Content-Kontakt {
-    padding: 20%;
-    height: 80vh;
-  }
+.Kontakt-Absatz {
+  color: white;
+}
+
+.Content-Kontakt {
+  padding: 10%;
+  background-color: rgb(0, 0, 0, 0.7);
+  width: 50%; /* Set the width to cover the left half */
+}

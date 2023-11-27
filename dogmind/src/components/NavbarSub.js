@@ -1,18 +1,18 @@
 // NavbarSub.js
 import React from 'react';
-import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import { Link } from 'react-router-dom';
+import { Col, Row } from 'react-bootstrap';
+import Test7 from '../assets/images/Test7.png'
+import '../assets/css/HeaderBar.css'
 
 const NavbarSub = () => {
-  const handleClick = () => {
-    // Scroll to the top of the page
-    scroll.scrollToTop({
-      smooth: true,
-      duration: 500,
-    });
-  };
 
   return (
+    <Row className="no-gutters">
+      <Col md={3} className="logo m-0 p-0">
+            <img src={Test7} alt="Logo dogmind" />
+      </Col>
+    <Col md={9} className="m-0 p-0">
     <nav>
       <ul>
         <li>
@@ -22,6 +22,8 @@ const NavbarSub = () => {
         </li>
       </ul>
     </nav>
+    </Col>
+    </Row>
   );
 };
 
