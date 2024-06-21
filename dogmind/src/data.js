@@ -37,7 +37,7 @@ const trainingData = [
     },
     {
       id: 2,
-      title: 'Welpen Gruppenkurs',
+      title: 'Welpen-Gruppenkurs',
       category: 'Welpen',
       imagePath: Welpe2,
       cardText: 'Sozialisierung mit Hunden, Menschen, Umgebungen, Geräuschen und vieles mehr.',
@@ -52,7 +52,7 @@ const trainingData = [
     },
     {
       id: 3,
-      title: 'Alltagstauglichkeit für Jung und Alt',
+      title: 'Alltagstauglich',
       category: 'Alltag',
       imagePath: Alltagstauglich,
       cardText: 'Jede erdenkliche Alltagssituation so entspannt als möglich meistern.',
@@ -70,7 +70,7 @@ const trainingData = [
     },
     {
       id: 4,
-      title: 'Medical Training',
+      title: 'Medical-Training',
       category: 'Probleme',
       imagePath: MedicalTraining,
       cardText: 'Tierarztbesuche und Medikamentenverabreichung trainieren, für stressfreie Behandlungen.',
@@ -88,7 +88,7 @@ const trainingData = [
     },
     {
       id: 5,
-      title: 'Verhaltensauffälligkeiten',
+      title: 'Verhaltensauffaelligkeiten',
       category: 'Probleme',
       imagePath: verhalten,
       cardText:'Unerwünschtes Verhalten durch Training gezielt korrigieren.',
@@ -108,7 +108,7 @@ const trainingData = [
     },
     {
       id: 6,
-      title: 'Spiel und Beschäftigung',
+      title: 'Spiel-und-Beschaeftigung',
       category: 'Alltag',
       imagePath: spiel,
       cardText: 'Sinnvolle Beschäftigung für Ausdauer und Köpfchen.',
@@ -125,7 +125,7 @@ const trainingData = [
     },
     {
       id: 7,
-      title: 'Training Kind mit Hund',
+      title: 'Training-Kind-mit-Hund',
       category: 'Spezialthema',
       imagePath: hundkind,
       cardText: 'Ziel ist es, eurem Nachwuchs die grundlegende Kommunikation mit eurem Fellknäuel beizubringen.',
@@ -133,7 +133,7 @@ const trainingData = [
     },
     {
       id: 8,
-      title: 'Hund mit Handicap',
+      title: 'Hund-mit-Handicap',
       category: 'Spezialthema',
       imagePath: hundmithandicap,
       cardText: 'Auch Hunde mit Behinderung wollen und brauchen Erziehung und Beschäftigung.',
@@ -141,7 +141,7 @@ const trainingData = [
     },
     {
       id: 9,
-      title: 'Spaziergang mit dem Hund',
+      title: 'Spaziergang-mit-dem-Hund',
       category: 'Spezialservices',
       imagePath: spaziergang,
       cardText:'Wenn zum Gassi-Gehen mal keine Zeit bleibt, gehe gerne ich eine Runde mit deiner Fellnase spazieren.',

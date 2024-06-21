@@ -3,19 +3,18 @@
 import React from 'react';
 import HeaderImageCircle from '../HeaderImageCircle';
 import IntroSub from '../IntroSub';
-import trainingData from '../../data'; // Make sure this import is correct
-import Welpe2 from '../../assets/images/Welpen/Welpe2.png';
+import trainingData from '../../data';
 import NavbarSub from '../NavbarSub';
 import AngeboteCards from '../AngeboteCards';
 
-function WelpenJunghundTraining() {
+function WelpenGruppenkurs() {
   // Check if trainingData is defined and is an array
   if (!Array.isArray(trainingData) || trainingData.length === 0) {
     console.error("Training data is not an array or is empty.");
     return null; // or handle the error accordingly
   }
 
-  const training = trainingData[0];
+  const training = trainingData[1];
 
   // Chunk the training data if needed
   const chunkedData = [];
@@ -29,11 +28,11 @@ function WelpenJunghundTraining() {
   }
 
   return (
-    <div id="welpenJunghundID">
+    <div id="welpenGruppenkursID">
       <NavbarSub />
       <HeaderImageCircle HeaderTitle={training.title} imageUrl={training.imagePath} altText="Welpe" />
       <IntroSub
-        trainingData={[training]} // Pass an array with the first training data item
+        trainingData={[training]} // Pass an array with the second training data item
       />
       {/* Pass the category prop to AngeboteCards */}
       <AngeboteCards trainingData={trainingData} categories={['Welpen', 'Alltag']} />
@@ -41,4 +40,4 @@ function WelpenJunghundTraining() {
   );
 }
 
-export default WelpenJunghundTraining;
+export default WelpenGruppenkurs;
