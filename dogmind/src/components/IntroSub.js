@@ -10,28 +10,28 @@ function IntroSub({ trainingData }) {
     return <p>No training data available.</p>;
   }
 
-  const firstTraining = trainingData[0];
+  const training = trainingData[0];
 
   return (
     <div>
       <Row>
         <Col md={6} className="left-column">
           {/* Left column for description */}
-          <h3 className='text-center mb-3'>{firstTraining.descriptionTitle}</h3>
-          <p>{firstTraining.description}</p>
+          <h3 className='text-center mb-3'>{training.descriptionTitle}</h3>
+          <p>{training.description}</p>
         </Col>
         <Col md={6} className="right-column">
           {/* Right column for contents */}
           <h3 className='text-center'>Inhalte</h3>
           <ul>
-            {firstTraining.contents.map((content, index) => (
+            {training.contents.map((content, index) => (
               <li key={index}>
                 <div className="icon" />
                 {content}
               </li>
             ))}
           </ul>
-          <p id="intro-sub-note">{firstTraining.note}</p>
+          <p id="intro-sub-note">{training.note}</p>
         </Col>
       </Row>
     </div>

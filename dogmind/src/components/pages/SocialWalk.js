@@ -4,7 +4,6 @@ import React from 'react';
 import HeaderImageCircle from '../HeaderImageCircle';
 import IntroSub from '../IntroSub';
 import trainingData from '../../data'; // Make sure this import is correct
-import Welpe2 from '../../assets/images/Welpen/Welpe2.png';
 import NavbarSub from '../NavbarSub';
 import AngeboteCards from '../AngeboteCards';
 
@@ -36,7 +35,7 @@ function SocialWalk() {
         trainingData={[training]} // Pass an array with the third training data item
       />
       {/* Pass the category prop to AngeboteCards */}
-      <AngeboteCards trainingData={trainingData} categories={['Welpen', 'Alltag']} />
+      <AngeboteCards trainingData={trainingData} categories={['Spezialthema', 'Spezialservices']} />
     </div>
   );
 }
