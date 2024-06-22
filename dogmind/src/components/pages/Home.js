@@ -17,7 +17,7 @@ function Home() {
 
   const qaPairs = [
     {
-      question: "Was ist Individualtraining bei Dog Mind?",
+      question: "Was ist Individualtraining bei Doggy Mind?",
       answer: (
         <ul>
           <li>Arbeit ohne Schema F – ich schau mir eure Voraussetzungen und Wünsche an, danach richtet sich der weitere Trainingsablauf.</li>
@@ -33,7 +33,7 @@ function Home() {
       answer: "In einem ausführlichen Gespräch lerne ich dich und deinen Hund kennen, du kannst mir all deine Fragen stellen und wir starten mit den ersten Trainingsschritten. Training soll Spaß machen und nicht in Stress und Druck ausarten."
     }
   ];
-  const highlightedWords = ['Einzelstunde', 'Dog Mind']; // Add any other words you want to highlight
+  const highlightedWords = ['Einzelstunde', 'Doggy Mind']; // Add any other words you want to highlight
 
 
     return (
@@ -42,7 +42,7 @@ function Home() {
         <Slider />
         <ScrollLink to="Intro2" smooth={true} duration={0} offset={-50}>
         <Intro2
-          firstWord="Dog"
+          firstWord="Doggy"
           secondWord="mind"
           secondPhrase="– mind my dog"
           firstParagraph="Die Hundesprache verstehen und deuten zu können, ist wie eine neue Fremdsprache zu lernen. Nur durch viel Übung und Anwendung zu meistern. Ich helfe dir und deinem besten Freund, eure Kommunikation und somit eure Bindung zusätzlich zu stärken."
