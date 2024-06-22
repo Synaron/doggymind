@@ -5,7 +5,7 @@ function Logo
 () {
   return (
     <div>
-        <img  src={LogoWeiß} alt="Logo dogmind" />
+        <img  src={LogoWeiß} alt="Logo doggymind" />
     </div>
   )
 }
