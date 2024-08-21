@@ -1,4 +1,4 @@
-// WelpenJunghundTraining.js
+// WelpenGruppenkurs.js
 
 import React from 'react';
 import HeaderImageCircle from '../HeaderImageCircle';

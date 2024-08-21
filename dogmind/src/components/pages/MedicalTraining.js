@@ -1,4 +1,4 @@
-// Alltagstauglich.js
+// Medical Training.js
 
 import React from 'react';
 import HeaderImageCircle from '../HeaderImageCircle';

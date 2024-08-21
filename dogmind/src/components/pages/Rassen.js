@@ -1,4 +1,4 @@
-// Faszienmassage.js
+// Rassen.js
 
 import React from 'react';
 import HeaderImageCircle from '../HeaderImageCircle';
@@ -7,7 +7,7 @@ import trainingData from '../../data'; // Make sure this import is correct
 import NavbarSub from '../NavbarSub';
 import AngeboteCards from '../AngeboteCards';
 
-function Faszienmassage() {
+function Rassen() {
   // Check if trainingData is defined and is an array
   if (!Array.isArray(trainingData) || trainingData.length === 0) {
     console.error("Training data is not an array or is empty.");
@@ -40,4 +40,4 @@ function Faszienmassage() {
   );
 }
 
-export default Faszienmassage;
+export default Rassen;

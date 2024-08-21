@@ -19,6 +19,7 @@ function IntroSub({ trainingData }) {
           {/* Left column for description */}
           <h3 className='text-center mb-3'>{training.descriptionTitle}</h3>
           <p>{training.description}</p>
+          <p>{training.seconddescription}</p>
         </Col>
         <Col md={6} className="right-column">
           {/* Right column for contents */}

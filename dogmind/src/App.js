@@ -20,7 +20,8 @@ import SpaziergangMitDemHund from './components/pages/SpaziergangMitDemHund.js';
 import Anschaffungsberatung from './components/pages/Anschaffungsberatung.js';
 import AntiJagdTraining from './components/pages/AntiJagdTraining.js';
 import SocialWalk from './components/pages/SocialWalk.js';
-import Faszienmassage from './components/pages/Faszienmassage.js';
+import Rassen from './components/pages/Rassen.js';
+
 
 
 function App() {
@@ -45,7 +46,8 @@ function App() {
           <Route path="/Anschaffungsberatung" element={<Anschaffungsberatung data={trainingData} />} />
           <Route path="/Anti-Jagd-Training" element={<AntiJagdTraining data={trainingData} />} />
           <Route path="/Social-Walk" element={<SocialWalk data={trainingData} />} />
-          <Route path="/Faszienmassage" element={<Faszienmassage data={trainingData} />} />
+          <Route path="/Urspruengliche-Rassen" element={<Rassen data={trainingData} />} />
+
         </Routes>
         <Contact />
         <Footer />

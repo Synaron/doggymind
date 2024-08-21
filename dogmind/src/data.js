@@ -9,9 +9,9 @@ import antijagd from './assets/images/antijagd.jpg';
 import spaziergang from './assets/images/spaziergang.png';
 import hundkind from './assets/images/hundkind.jpg';
 import hundmithandicap from './assets/images/hundmithandicap.png';
-import faszien from './assets/images/faszien.jpg';
 import anschaffung from './assets/images/anschaffung.png'
 import spiel from './assets/images/Spiel.png'
+import rassen from './assets/images/antijagd.jpg'
 
 const trainingData = [
     {
@@ -179,11 +179,12 @@ const trainingData = [
       category: 'Spezialthema',
       imagePath: antijagd,
       contents: [
-        'Inhalt fehlt',
-        'Inhalt fehlt',
+        'Verhaltensanalyse',
+        'Situationsbedingtes Verhalten etablieren',
       ],
       cardText:'Der Jagdtrieb deines Hundes bringt dich zur Verzweiflung? Kein Problem, Für Anti-Jagd-Training ist es nie zu spät.',
       description: 'Ein Hase, Reh oder die Nachbarskatze – mehr braucht es nicht und dein Hund wechselt in den Jagdmodus. Rückruf oder Grundkommandos scheinen in dieser Situation vergessen zu sein. Der Jagdtrieb deines Hundes bringt dich zur Verzweiflung? Kein Problem, Für Anti- Jagd- Training ist es nie zu spät! Der Jagdtrieb eines Hundes kann meist nicht vollständig abgewöhnt, aber kontrolliert werden. Unter der Beachtung der Fähigkeiten deines Hundes erstellen wir gemeinsam den für euch passenden Trainingsweg.',
+      seconddescription: 'Eines gleich Vorweg: Den Jagdtrieb komplett abzugewöhnen ist nicht möglich, da in der Genetik des Hundes fest verankert. Ein unterbinden führt beim Hund meist zu Frust und Unausgeglichenheit . Gemeinsam schauen wir, was deinem Freund gefällt und wie wir dadurch das Jagdverhalten verändern können.',
     },
 
     {
@@ -192,24 +193,31 @@ const trainingData = [
       category: 'Spezialthema',
       imagePath: socialwalk,
       contents: [
-        'Inhalt fehlt',
-        'Inhalt fehlt',
+        'Training der Leinenführigkeit unter Ablenkung',
+        'Körpersprache des eigenen Hundes deuten lernen,',
+        'ozialkontakte mit angemessenen Verhalten der Hunde untereinander.'
       ],      
       cardText: 'Unter kontrollierten Bedingungen und Anleitung eines Trainers auf Artgenossen und Menschen treffen und Begegnungen trainieren.',
       description: 'Ein Social Walk bietet die Möglichkeit, unter kontrollierten Bedingungen und Anleitung eines Trainers auf Artgenossen und Menschen zu treffen und Begegnungen zu trainieren. Mensch und Hund lernen gemeinsam mit anderen Teams sich durch den Alltag zu bewegen. Schwerpunkte: Training der Leinenführigkeit unter Ablenkung, Körpersprache des eigenen Hundes deuten lernen, Sozialkontakte mit angemessenen Verhalten der Hunde untereinander. Ziel: Der eigene Hund lernt, dass die Anwesenheit anderer Hunde beim Gassi/Spazierengehen dazugehört und er in der Situation neutral (nicht aufgeregt oder ängstlich) reagiert.',
+      seconddescription: 'Ziel: Der eigene Hund lernt, dass die Anwesenheit anderer Hunde beim Gassi/Spazierengehen dazugehört und er in der Situation neutral (nicht aufgeregt oder ängstlich) reagiert.'
     },
+
     {
       id: 13,
-      title: 'Faszienmassage',
-      category: 'Spezialservices',
-      imagePath: faszien,
+      title: 'Urspruengliche Rassen',
+      category: 'Spezialthema',
+      imagePath: rassen,
       contents: [
-        'Inhalt fehlt',
-        'Inhalt fehlt',
-      ],
-      cardText: 'Durch Massage Faszien lockern und schmerzfreie Mobilität unterstützen.',
-      description: 'Faszien – das Bindegewebe des Körpers – sind mitentscheidend für die Beweglichkeit eines Tieres. Durch Stress, Verletzungen und Operationen, Schonhaltungen und Bewegungsmangel verkürzen und verhärten sie sich. Die Faszien werden starr und unbeweglich. Steifheit und oft Schmerzen sind die Folge. Bei der Faszienmassage werden diese wieder gelockert zusätzlich Mobilisationsübungen durchgeführt.',
+        'Verhaltensanalyse',
+        'Abgestimmtes Training,',
+        'Spezielle Spiele / Beschäftigungen.',
+        'Sonder - Trainingsmethoden',
+      ],      
+      cardText: 'Neue Zusammenfassung.',
+      description: 'So wie es unter uns Menschen Charaktere mit eigenen Bedürfnissen gibt, gibt’s auch bei Hundenrassen solche. Die Rede ist von den sogenannten Ursprünglichen Rassen. Darunter fallen zum Beispiel American Akita, diverse Wolfhunde sowie Schlittenhunde (Husky, Alaskan Malamute, Samojede, ...), um ein paar Beispiele zu nennen.',
+      seconddescription: 'Die Eigenheit bei den meisten dieser Rassetypen liegt an dem fehlenden „will to please“ (der Wunsch dem Menschen zu gefallen). Aufgrund dessen benötigen solche Hunde sehr oft eine andere Herangehensweise an das Training, um zum gewünschten Erfolg zu kommen.'
     },
+
 
     // Add more training programs as needed
   ];
