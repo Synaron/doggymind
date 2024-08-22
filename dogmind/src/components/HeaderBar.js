@@ -51,6 +51,11 @@ const HeaderBar = () => {
                 </Link>
               </li>
               <li>
+                  <a href="./assets/documents/Preisliste_2024" target="_blank" rel="noopener noreferrer" style={{ color: '#ffffff' }}>
+                    Preisliste
+                  </a>
+                </li>
+              <li>
                 <Link style={{ color: '#ffffff' }} to="Kontakt" smooth={true} duration={500}>
                   Kontakt
                 </Link>
