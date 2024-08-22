@@ -5,7 +5,6 @@ import Home from './components/pages/Home';
 import WelpenJunghundTraining from './components/pages/WelpenJunghundTraining';
 import WelpenGruppenkurs from './components/pages/WelpenGruppenkurs.js';
 import trainingData from './data';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Datenschutz from './components/pages/Datenschutz';
 import Impressum from './components/pages/Impressum';
@@ -21,6 +20,7 @@ import Anschaffungsberatung from './components/pages/Anschaffungsberatung.js';
 import AntiJagdTraining from './components/pages/AntiJagdTraining.js';
 import SocialWalk from './components/pages/SocialWalk.js';
 import Rassen from './components/pages/Rassen.js';
+import ContactForm from './components/ContactForm.js';
 
 
 
@@ -49,7 +49,7 @@ function App() {
           <Route path="/Urspruengliche-Rassen" element={<Rassen data={trainingData} />} />
 
         </Routes>
-        <Contact />
+        <ContactForm />
         <Footer />
       </div>
     </Router>

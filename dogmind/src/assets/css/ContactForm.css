@@ -1,0 +1,75 @@
+/* ContactForm.css */
+
+.background-with-overlay {
+  background-color: yellow; /* Set the entire background to yellow */
+  height: 100vh; /* Full height of the viewport */
+  display: flex; /* Enable flexbox layout */
+  justify-content: flex-start; /* Align the form to the left */
+  align-items: center; /* Center the form vertically */
+  padding: 20px; /* Add padding to ensure form doesn’t touch the edges */
+  box-sizing: border-box; /* Ensure padding is included in height/width calculations */
+}
+
+#kontaktformular {
+  color: black;
+  height: 10px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  background-color: #f9f9f9;
+  padding: 5px;
+  border-radius: 15px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  width: 600px; /* Set a fixed width for the form */
+  box-sizing: border-box; /* Ensure padding is included in height/width calculations */
+  height: 80vh;
+  margin-bottom: 5%;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-bottom: 3px;
+  color: #333;
+  width: 400px;
+  font-size: 11px;
+}
+
+.form-input,
+.form-textarea {
+  width: 80%;
+  padding: 5px;
+  font-size: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensure padding is included in height/width calculations */
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.form-textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.form-submit {
+  background-color: rgb(246, 190, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-submit:hover {
+  background-color: rgb(246, 190, 0);
+}
