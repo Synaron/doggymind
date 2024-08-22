@@ -204,7 +204,7 @@ const trainingData = [
 
     {
       id: 13,
-      title: 'Urspruengliche Rassen',
+      title: 'Urspruengliche-Rassen',
       category: 'Spezialthema',
       imagePath: rassen,
       contents: [
