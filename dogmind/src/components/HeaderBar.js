@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../assets/css/HeaderBar.css';
-import Test7 from '../assets/images/Test7.png';
+import LogoGelb from '../assets/images/LogoGelb.png'
 import { Link as ScrollLink } from 'react-scroll'; // For scroll navigation
 import { Link as RouterLink } from 'react-router-dom'; // For page navigation
 import { Container, Row, Col } from 'react-bootstrap';
@@ -26,7 +26,7 @@ const HeaderBar = () => {
       <Container>
         <Row className="d-flex align-items-center">
           <Col md={3} className="logo">
-            <img src={Test7} alt="Logo dogmind" />
+          <img src={LogoGelb} alt="Logo doggymind" />
           </Col>
           <Col md={9}>
             <nav>
