@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import '../assets/css/HeaderBar.css';
 import Test7 from '../assets/images/Test7.png';
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll'; // For scroll navigation
+import { Link as RouterLink } from 'react-router-dom'; // For page navigation
 import { Container, Row, Col } from 'react-bootstrap';
 
 const HeaderBar = () => {
@@ -10,7 +11,7 @@ const HeaderBar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      setScrolling(scrollTop > 0); // Change the scroll threshold to 0 for immediate change
+      setScrolling(scrollTop > 0);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -31,35 +32,35 @@ const HeaderBar = () => {
             <nav>
               <ul>
                 <li>
-                  <Link style={{ color: '#ffffff' }}  to="Intro2" smooth={true} duration={500}>
+                  <ScrollLink style={{ color: '#ffffff' }} to="Intro2" smooth={true} duration={500}>
                     Über mich
-                  </Link>
+                  </ScrollLink>
                 </li>
                 <li>
-                <Link style={{ color: '#ffffff' }} to="Probleme" smooth={true} duration={500}>
-                  Häufige Probleme
-                </Link>
-              </li>
-              <li>
-                <Link style={{ color: '#ffffff' }} to="Angebote" smooth={true} duration={500}>
-                  Mein Training
-                </Link>
-              </li>
-              <li>
-                <Link style={{ color: '#ffffff' }} to="heading-faq" smooth={true} duration={500}>
-                  FAQ
-                </Link>
-              </li>
-              <li>
-                  <a href="./assets/documents/Preisliste_2024" target="_blank" rel="noopener noreferrer" style={{ color: '#ffffff' }}>
-                    Preisliste
-                  </a>
+                  <ScrollLink style={{ color: '#ffffff' }} to="Probleme" smooth={true} duration={500}>
+                    Häufige Probleme
+                  </ScrollLink>
                 </li>
-              <li>
-                <Link style={{ color: '#ffffff' }} to="Kontakt" smooth={true} duration={500}>
-                  Kontakt
-                </Link>
-              </li>
+                <li>
+                  <ScrollLink style={{ color: '#ffffff' }} to="Angebote" smooth={true} duration={500}>
+                    Mein Training
+                  </ScrollLink>
+                </li>
+                <li>
+                  <ScrollLink style={{ color: '#ffffff' }} to="heading-faq" smooth={true} duration={500}>
+                    FAQ
+                  </ScrollLink>
+                </li>
+                <li>
+                  <RouterLink style={{ color: '#ffffff' }} to="/preisliste">
+                    Preisliste
+                  </RouterLink>
+                </li>
+                <li>
+                  <ScrollLink style={{ color: '#ffffff' }} to="Kontakt" smooth={true} duration={500}>
+                    Kontakt
+                  </ScrollLink>
+                </li>
               </ul>
             </nav>
           </Col>

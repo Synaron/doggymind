@@ -21,7 +21,8 @@ import AntiJagdTraining from './components/pages/AntiJagdTraining.js';
 import SocialWalk from './components/pages/SocialWalk.js';
 import Rassen from './components/pages/Rassen.js';
 import ContactForm from './components/ContactForm.js';
-
+import Preisliste from './components/pages/Preisliste.js';
+import AGBs from './components/pages/AGBs.js';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/datenschutz" element={<Datenschutz />} />
           <Route path="/impressum" element={<Impressum />} />
+          <Route path="/agbs" element={<AGBs />} />
           <Route path="/Welpen-und-Junghundtraining" element={<WelpenJunghundTraining data={trainingData} />} />
           <Route path="/Welpen-Gruppenkurs" element={<WelpenGruppenkurs data={trainingData} />} />
           <Route path="/Alltagstauglich" element={<Alltagstauglich data={trainingData} />} />
@@ -47,6 +49,8 @@ function App() {
           <Route path="/Anti-Jagd-Training" element={<AntiJagdTraining data={trainingData} />} />
           <Route path="/Social-Walk" element={<SocialWalk data={trainingData} />} />
           <Route path="/Urspruengliche-Rassen" element={<Rassen data={trainingData} />} />
+          <Route path="/Preisliste" element={<Preisliste />} />
+
 
         </Routes>
         <ContactForm />
