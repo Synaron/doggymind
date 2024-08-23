@@ -45,8 +45,8 @@ function Home() {
           firstWord="Doggy"
           secondWord="mind"
           secondPhrase="– mind my dog"
-          firstParagraph="Die Hundesprache verstehen und deuten zu können, ist wie eine neue Fremdsprache zu lernen. Nur durch viel Übung und Anwendung zu meistern. Ich helfe dir und deinem besten Freund, eure Kommunikation und somit eure Bindung zusätzlich zu stärken."
-          secondParagraph="Im individuellen Einzeltraining konzentriere ich mich nur auf dich und deinen Hund. Dadurch könnt ihr gemeinsam effektiv und intensiv an euren Zielen arbeiten. So einzigartig wie jeder Mensch und jeder Hund ist, so auch der Trainingsansatz. Gemeinsam finden wir den passenden Weg für euch." 
+          firstParagraph="Die Hundesprache verstehen und deuten zu können, ist wie eine neue Fremdsprache zu lernen. Nur durch viel Übung und Anwendung ist sie zu meistern. Wir helfen dir und deinem besten Freund, eure Kommunikation und somit eure Bindung zu stärken."
+          secondParagraph="Im individuellen Einzeltraining konzentrieren wir uns nur auf dich und deinen Hund. Dadurch könnt ihr gemeinsam effektiv und intensiv an euren Zielen arbeiten. So einzigartig wie jeder Mensch und jeder Hund ist, so einzigartig ist auch der Trainingsansatz. Gemeinsam finden wir den passenden Weg für euch." 
           image1={IntroPic1}
           image2={IntroPic2}
           />

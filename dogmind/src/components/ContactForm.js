@@ -10,8 +10,8 @@ export const ContactForm = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_ce53x1b', 'template_rck0n0n', form.current, {
-        publicKey: 'JgMmuVjh0G2U1PPwC',
+      .sendForm('service_qviqg5p', 'template_4yy5jz3', form.current, {
+        publicKey: 'cjTIFBXn_XTsowP91',
       })
       .then(
         () => {
@@ -30,13 +30,13 @@ export const ContactForm = () => {
       <form ref={form} onSubmit={sendEmail} className="contact-form">
         <h1 id='kontaktformular'>Kontaktformular</h1>
         <label>Name</label>
-        <input type="text" name="user_name" className="form-input" />
+        <input type="text" name="from_name" className="form-input" />
         <label>Anschrift</label>
         <input type="text" name="anschrift" className="form-input" />
         <label>Telefonnummer:</label>
         <input type="text" name="telefonnummer" className="form-input" />
         <label>Email</label>
-        <input type="email" name="user_email" className="form-input" />
+        <input type="email" name="email" className="form-input" />
         <label>Alter des Hundes:</label>
         <input type="text" name="alter_des_hundes" className="form-input" />
         <label>Hunderasse:</label>
