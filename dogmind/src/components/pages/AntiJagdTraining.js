@@ -14,7 +14,7 @@ function AntiJagdTraining() {
     return null; // or handle the error accordingly
   }
 
-  const training = trainingData[10];
+  const training = trainingData[9];
 
   // Chunk the training data if needed
   const chunkedData = [];

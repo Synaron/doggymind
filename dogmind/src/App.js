@@ -15,7 +15,6 @@ import Verhaltensauffaelligkeiten from './components/pages/Verhaltensauffaelligk
 import SpielUndBeschaeftigung from './components/pages/SpielUndBeschaeftigung.js';
 import TrainingKindMitHund from './components/pages/TrainingKindMitHund.js';
 import HundMitHandicap from './components/pages/HundMitHandicap.js';
-import SpaziergangMitDemHund from './components/pages/SpaziergangMitDemHund.js';
 import Anschaffungsberatung from './components/pages/Anschaffungsberatung.js';
 import AntiJagdTraining from './components/pages/AntiJagdTraining.js';
 import SocialWalk from './components/pages/SocialWalk.js';
@@ -43,13 +42,12 @@ function App() {
           <Route path="/Spiel-und-Beschaeftigung" element={<SpielUndBeschaeftigung data={trainingData} />} />
           <Route path="/Training-Kind-mit-Hund" element={<TrainingKindMitHund data={trainingData} />} />
           <Route path="/Hund-mit-Handicap" element={<HundMitHandicap data={trainingData} />} />
-          <Route path="/Spaziergang-mit-dem-Hund" element={<SpaziergangMitDemHund data={trainingData} />} />
           <Route path="/Anschaffungsberatung" element={<Anschaffungsberatung data={trainingData} />} />
           <Route path="/Anti-Jagd-Training" element={<AntiJagdTraining data={trainingData} />} />
           <Route path="/Social-Walk" element={<SocialWalk data={trainingData} />} />
           <Route path="/Urspruengliche-Rassen" element={<Rassen data={trainingData} />} />
           <Route path="/Preisliste" element={<Preisliste />} />
-          <Route path="/WelpenGruppenkurs" element={<WelpenGruppenkurs data={trainingData} />} />
+          <Route path="/Welpen-Gruppenkurs" element={<WelpenGruppenkurs data={trainingData} />} />
 
         </Routes>
         <ContactForm />

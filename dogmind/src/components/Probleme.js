@@ -15,12 +15,12 @@ function Probleme() {
           <img  src={Profil1} alt="Hundetraining" width="80%" />
           </Col>
           <Col style={{ paddingLeft: '2%'}}>
-          <h2 style={{ fontSize: '1.5rem', textAlign:'center', paddingBottom: '5%'}}>Du kannst Spaziergänge nicht mehr genießen, weil dein Hund ...</h2>
+          <h2 style={{ fontSize: '1.5rem', textAlign:'center', paddingBottom: '5%'}}>Du kannst deine Spaziergänge nicht genießen, weil dein Hund …</h2>
           <ul className='Liste'>
-              <li>Ständig an der Leine zieht</li>
-              <li>Jeden Artgenossen begrüßen will</li>
-              <li>Dich stehen lässt, weil alles andere spannender ist als du</li>
-              <li>andere Hunde anpöbelt</li>
+              <li>ständig an der Leine zieht</li>
+              <li>jeden Artgenossen begrüßen will</li>
+              <li>so gut wie alles spannend findet</li>
+              <li>oder andere Hunde anpöbelt</li>
           </ul>
           </Col>
         </Col>

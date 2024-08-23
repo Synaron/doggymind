@@ -14,7 +14,7 @@ function SocialWalk() {
     return null; // or handle the error accordingly
   }
 
-  const training = trainingData[11];
+  const training = trainingData[10];
 
   // Chunk the training data if needed
   const chunkedData = [];

@@ -23,7 +23,7 @@ function IntroSub({ trainingData }) {
         </Col>
         <Col md={6} className="right-column">
           {/* Right column for contents */}
-          <h3 className='text-center'>Inhalte</h3>
+          <h3 className='text-center'> Mögliche Themen im Einzeltraining:</h3>
           <ul>
             {training.contents.map((content, index) => (
               <li key={index}>

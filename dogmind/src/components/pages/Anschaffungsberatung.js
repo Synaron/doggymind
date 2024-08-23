@@ -14,7 +14,7 @@ function Anschaffungsberatung() {
     return null; // or handle the error accordingly
   }
 
-  const training = trainingData[9];
+  const training = trainingData[8];
 
   // Chunk the training data if needed
   const chunkedData = [];

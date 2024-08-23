@@ -6,7 +6,6 @@ import MedicalTraining from './assets/images/MedicalTraining.png';
 import verhalten from './assets/images/verhalten.png';
 import socialwalk from './assets/images/socialwalk.png';
 import antijagd from './assets/images/antijagd.jpg';
-import spaziergang from './assets/images/spaziergang.png';
 import hundkind from './assets/images/hundkind.jpg';
 import hundmithandicap from './assets/images/hundmithandicap.png';
 import anschaffung from './assets/images/anschaffung.png'
@@ -20,8 +19,8 @@ const trainingData = [
       category: 'Welpen',
       imagePath: welpe11,
       cardText: 'Wir legen miteinander den richtigen Grundstein in der wichtigsten Entwicklungsphase.',
-      descriptionTitle: 'Welpentraining: Ein Schlüssel für eine harmonische Mensch-Hund-Beziehung.',
-      description: 'Die Erziehung eines Welpen legt den Grundstein für ein erfülltes Zusammenleben. Beginne das Training frühzeitig, indem du grundlegende Kommandos wie "Sitz" und "Platz" einführen und positive Verstärkung nutzen. Sozialisation ist ebenso wichtig; ermögliche deinem Welpen Begegnungen mit verschiedenen Umgebungen und Artgenossen. Die Stubenreinheit zu lehren erfordert Geduld und Konsistenz. Belohne  gutes Verhalten und sei stets liebevoll. Durch klare Regeln und regelmäßiges Training schaffst du eine vertrauensvolle Basis für eine lebenslange Freundschaft. Soweit die Theorie, doch einen süssen Welpen zu erziehen, ist nicht immer so einfach... Deshalb unterstütze ich dich gerne dabei!',
+      descriptionTitle: 'Welpentraining: Der Schlüssel für eine harmonische Mensch-Hund-Beziehung.',
+      description: 'Einen Welpen/Junghund zu erziehen ist nicht immer einfach, da sie ja sooo süß sind. Wir legen miteinander den richtigen Grundstein in einer der wichtigsten Entwicklungsphasen. Gewünschte Verhaltensweisen können somit von Anfang an geübt werden.',
       contents: [
         'Stubenreinheit',
         'Alleine bleiben',
@@ -37,16 +36,17 @@ const trainingData = [
     },
     {
       id: 2,
-      title: 'WelpenGruppenkurs',
+      title: 'Welpen-Gruppenkurs',
       category: 'Welpen',
       imagePath: Welpe2,
       cardText: 'Sozialisierung mit Hunden, Menschen, Umgebungen, Geräuschen und vieles mehr.',
-      description: 'Ab wann? - Ab dem Welpenalter von 10 Wochen und dein Hund sollte mindestens 2 Wochen zuhause angekommen sein. Dauer 10 Einheiten, 1x wöchentlich',
+      description: 'Ab wann? - Welpenalter 10 Wochen und mindestens 2 Wochen zuhause angekommen. Dauer: 10 Einheiten, 1x wöchentlich.',
       contents: [
         'Sozialisierung mit Hunden, Menschen, Umgebungen, Geräuschen uvm.',
         'Beratung Stubenreinheit, Beißhemmung usw.',
         'Grundsignale',
-        'Locker leine gehen und richtiges Spielen',
+        'Locker an der Leine gehen',
+        'Hundgerechtes Spielen',
         'Deckentraining',
       ],
     },
@@ -56,7 +56,7 @@ const trainingData = [
       category: 'Alltag',
       imagePath: Alltagstauglich,
       cardText: 'Jede erdenkliche Alltagssituation so entspannt als möglich meistern.',
-      description: 'Mir ist sehr wichtig, dass du und dein treuer Begleiter jede erdenkliche Alltagssituation so entspannt als möglich meistert.',
+      description: 'Uns ist sehr wichtig, dass du und dein treuer Begleiter jede erdenkliche Alltagssituation gemeinsam souverän meistert.',
       contents: [
         'Leinenführigkeit',
         'Aufmerksamkeit auf Halter',
@@ -74,17 +74,16 @@ const trainingData = [
       category: 'Probleme',
       imagePath: MedicalTraining,
       cardText: 'Tierarztbesuche und Medikamentenverabreichung trainieren, für stressfreie Behandlungen.',
-      description: 'Der Tierarztbesuch, sowie die Verabreichung von Medikamenten ist für viele Hunde unangenehm. Das Medical-Training bietet dir und deinem Freund die Möglichkeit, diese Situationen stressfrei und sogar entspannt zu erleben. Zudem wird eure Bindung dadurch noch mehr gestärkt,  da Schwieriges miteinander positiv erlebt wird.',
+      description: 'Der Tierarztbesuch, sowie die Verabreichung von Medikamenten ist für viele Hunde unangenehm, aber notwendig. Das Medical-Training bietet dir und deinem Freund die Möglichkeit, diese Situationen möglichst stressfrei und sogar entspannt zu erleben. Zudem wird eure Bindung dadurch noch mehr gestärkt, da Schwieriges miteinander positiv erlebt wird.',
       contents: [
         'Berührungen von Fremden',
         'Korrekter Umgang am Behandlungstisch',
         'Unangenehme Gerüche',
         'Zecken entfernen',
-        'Hunde- / Menschenbegegnungen',
-        'Verhalten im Straßenverkehr',
-        'Kommunikation / Ausdrucksverhalten des Hundes',
+        'Krallen schneiden',
+        'Augentropfen',
+        'Fellpflege',
       ],
-      note: 'Die aufgelisteten Themen sind nur Beispiele. Tatsächlich werden je nach Erfahrung und Bedarf die Themen zusammengestellt und während dem aktiven Training adaptiert.',
     },
     {
       id: 5,
@@ -100,11 +99,10 @@ const trainingData = [
         'Futterverteidigung',
         'Frust',
         'Ausuferndes Jagdverhalten (läuft Autos, Radfahrer, Jogger hinterher,…)',
-        'Obsessionen (Balljunkie,….)',
+        'Obsessionen',
         'Daueraufregung',
-        'Familienzuwachs (Geburt, Kinder)',
+        'Anderes Verhalten bei Familienzuwachs (Geburt, Kinder)',
       ],
-      note: 'Die wichtigsten Zutaten zum erwünschten Erfolg sind gegenseitiges Vertrauen, Ruhe und Gelassenheit.',
     },
     {
       id: 6,
@@ -112,7 +110,7 @@ const trainingData = [
       category: 'Alltag',
       imagePath: spiel,
       cardText: 'Sinnvolle Beschäftigung für Ausdauer und Köpfchen.',
-      description: 'Es gibt viele Möglichkeiten unseren geliebten Vierbeiner zu beschäftigen. Am wichtigsten ist es, dass ihr beide Spaß habt. Deshalb finden wir gemeinsam die für euch ideale Beschäftigung.',
+      description: 'Es gibt viele Möglichkeiten unseren geliebten Vierbeiner zu beschäftigen. Am wichtigsten ist es, dass ihr beide Spaß habt. Deshalb finden wir gemeinsam die für euch die ideale Beschäftigung.',
       contents: [
         'Nasenarbeit (Fährte)',
         'Apportieren',
@@ -121,7 +119,6 @@ const trainingData = [
         'Mantrailing',
         'Tricktraining',
       ],
-      note: 'Die wichtigsten Zutaten zum erwünschten Erfolg sind gegenseitiges Vertrauen, Ruhe und Gelassenheit.',
     },
     {
       id: 7,
@@ -129,11 +126,12 @@ const trainingData = [
       category: 'Spezialthema',
       imagePath: hundkind,
       contents: [
-        'Inhalt fehlt',
-        'Inhalt fehlt',
+        'Grundlegende Kommunikation/Verhalten zwischen Hund und Kind',
+        'Was bedeuten bestimmte Gesten - kindgerecht aufbereitet',
+        'Spiele für Kind und Hund',
       ],
       cardText: 'Ziel ist es, eurem Nachwuchs die grundlegende Kommunikation mit eurem Fellknäuel beizubringen.',
-      description: 'Wichtig im Zusammenleben mit Hunden ist, dass auch unsere kleinen Familienmitglieder verstehen, warum unser Freund ein bestimmtes Verhalten zeigt. Ziel ist es, euren Nachwuchs die grundlegende Kommunikation mit dem Fellknäuel durch Tricks beizubringen. Ich zeige euch Möglichkeiten, wie das Leben mit Kind(ern) und Hund entspannt möglich ist.',
+      description: 'Wichtig im Zusammenleben mit Hunden ist, dass auch unsere kleinen Familienmitglieder verstehen, warum unser Freund ein bestimmtes Verhalten zeigt. Ziel ist es, den Nachwuchs die grundlegende Kommunikation mit dem Fellknäuel durch Tricks beizubringen. Wir zeigen euch Möglichkeiten, wie das Leben mit Kind(ern) und Hund entspannt möglich ist.',
     },
     {
       id: 8,
@@ -141,40 +139,31 @@ const trainingData = [
       category: 'Spezialthema',
       imagePath: hundmithandicap,
       contents: [
-        'Inhalt fehlt',
-        'Inhalt fehlt',
+        'Handicapgerechter individueller Trainingsplan',
+        '(Alltags-) Übungen auf die Einschränkungen abgestimmt',
+        'Handicapgerechtes Spiel und Beschäftigung',
       ],
       cardText: 'Auch Hunde mit Behinderung wollen und brauchen Erziehung und Beschäftigung.',
-      description: 'Hunde mit Behinderung wollen genauso arbeiten wie jeder andere Hund und brauchen Erziehung und Beschäftigung. Jedes Training wird auf die individuellen Bedürfnisse abgestimmt und garantiert Spaß und Erfolg für Hund und Halter.',
-    },
-    {
-      id: 9,
-      title: 'Spaziergang-mit-dem-Hund',
-      category: 'Spezialservices',
-      imagePath: spaziergang,
-      contents: [
-        'Inhalt fehlt',
-        'Inhalt fehlt',
-      ],      
-      cardText:'Wenn zum Gassi-Gehen mal keine Zeit bleibt, gehe gerne ich eine Runde mit deiner Fellnase spazieren.',
-      description: 'So sehr wir nur das Beste für unseren Vierbeiner wollen, stehen uns oftmals Verpflichtungen im Weg, wodurch ein notwendiger Spaziergang nicht möglich ist. Nach einem ausgiebigen Kennenlerngespräch hole ich deinen Begleiter zur vereinbarten Zeit am vereinbarten Ort ab. Ist mit meinen anderen Angeboten kombinierbar.',
+      description: 'Hunde mit Behinderung wollen genauso arbeiten wie jeder andere Hund und brauchen Erziehung und Beschäftigung.',
     },
 
     {
-      id: 10,
+      id: 9,
       title: 'Anschaffungsberatung',
       category: 'Spezialservices',
       imagePath: anschaffung,
       contents: [
-        'Inhalt fehlt',
-        'Inhalt fehlt',
+        'Welche Erfahrungen mit Hunden habe ich',
+        'Welche Rasse soll bei mir einziehen? - Und warum genau?',
+        '...',
       ],
       cardText:'Ein Hund ist eine große Verantwortung. Entsprechend wohl überlegt sollte eine Anschaffung sein. Ich berate dich gerne.',
-      description: 'Bevor eine Fellnase ein Teil deiner Familie wird, solltest du dir einige Fragen stellen und diese beantworten können. Ich helfe und begleite dich dabei sehr gerne – egal ob Welpe oder Tierschutzhund, da ich für euch nur das Beste will. Begleite: Ich fahr mit zum Tierheim oder zum Züchter – vielleicht fällt dir dabei ein besseres Wording ein.',
+      description: 'Bevor eine Fellnase ein Teil deiner Familie wird, solltest du dir einige Fragen stellen und diese beantworten können.',
+      note:'Wir helfen und begleiten dich dabei sehr gerne – egal ob Welpe oder Tierschutzhund, da wir für dich nur das Beste wollen.',
     },
 
     {
-      id: 11,
+      id: 10,
       title: 'Anti-Jagd-Training',
       category: 'Spezialthema',
       imagePath: antijagd,
@@ -183,27 +172,27 @@ const trainingData = [
         'Situationsbedingtes Verhalten etablieren',
       ],
       cardText:'Der Jagdtrieb deines Hundes bringt dich zur Verzweiflung? Kein Problem, Für Anti-Jagd-Training ist es nie zu spät.',
-      description: 'Ein Hase, Reh oder die Nachbarskatze – mehr braucht es nicht und dein Hund wechselt in den Jagdmodus. Rückruf oder Grundkommandos scheinen in dieser Situation vergessen zu sein. Der Jagdtrieb deines Hundes bringt dich zur Verzweiflung? Kein Problem, Für Anti- Jagd- Training ist es nie zu spät! Der Jagdtrieb eines Hundes kann meist nicht vollständig abgewöhnt, aber kontrolliert werden. Unter der Beachtung der Fähigkeiten deines Hundes erstellen wir gemeinsam den für euch passenden Trainingsweg.',
-      seconddescription: 'Eines gleich Vorweg: Den Jagdtrieb komplett abzugewöhnen ist nicht möglich, da in der Genetik des Hundes fest verankert. Ein unterbinden führt beim Hund meist zu Frust und Unausgeglichenheit . Gemeinsam schauen wir, was deinem Freund gefällt und wie wir dadurch das Jagdverhalten verändern können.',
+      description: 'Ein Hase, Reh oder die Nachbarskatze – mehr braucht es nicht und dein Hund wechselt in den Jagdmodus. Rückruf oder Grundkommandos scheinen in dieser Situation vergessen zu sein. Der Jagdtrieb deines Hundes bringt dich zur Verzweiflung? Kein Problem, Für Anti- Jagd- Training ist es nie zu spät!',
     },
 
     {
-      id: 12,
+      id: 11,
       title: 'Social-Walk',
       category: 'Spezialthema',
       imagePath: socialwalk,
       contents: [
         'Training der Leinenführigkeit unter Ablenkung',
         'Körpersprache des eigenen Hundes deuten lernen,',
-        'ozialkontakte mit angemessenen Verhalten der Hunde untereinander.'
+        'Sozialkontakte mit angemessenen Verhalten der Hunde untereinander.'
       ],      
       cardText: 'Unter kontrollierten Bedingungen und Anleitung eines Trainers auf Artgenossen und Menschen treffen und Begegnungen trainieren.',
-      description: 'Ein Social Walk bietet die Möglichkeit, unter kontrollierten Bedingungen und Anleitung eines Trainers auf Artgenossen und Menschen zu treffen und Begegnungen zu trainieren. Mensch und Hund lernen gemeinsam mit anderen Teams sich durch den Alltag zu bewegen. Schwerpunkte: Training der Leinenführigkeit unter Ablenkung, Körpersprache des eigenen Hundes deuten lernen, Sozialkontakte mit angemessenen Verhalten der Hunde untereinander. Ziel: Der eigene Hund lernt, dass die Anwesenheit anderer Hunde beim Gassi/Spazierengehen dazugehört und er in der Situation neutral (nicht aufgeregt oder ängstlich) reagiert.',
-      seconddescription: 'Ziel: Der eigene Hund lernt, dass die Anwesenheit anderer Hunde beim Gassi/Spazierengehen dazugehört und er in der Situation neutral (nicht aufgeregt oder ängstlich) reagiert.'
+      description: ' Ein Social Walk bietet die Möglichkeit, unter kontrollierten Bedingungen und Anleitung eines Trainers auf Artgenossen und Menschen zu treffen und Begegnungen zu trainieren.',
+      seconddescription: 'Mensch und Hund lernen gemeinsam mit anderen Teams sich durch den Alltag zu bewegen.',
+      note:'Ziel: Der eigene Hund lernt, dass die Anwesenheit anderer Hunde beim Gassi/Spazierengehen dazugehört und er in der Situation neutral (nicht aufgeregt oder ängstlich) reagiert.',
     },
 
     {
-      id: 13,
+      id: 12,
       title: 'Urspruengliche-Rassen',
       category: 'Spezialthema',
       imagePath: rassen,
@@ -211,11 +200,9 @@ const trainingData = [
         'Verhaltensanalyse',
         'Abgestimmtes Training,',
         'Spezielle Spiele / Beschäftigungen.',
-        'Sonder - Trainingsmethoden',
       ],      
-      cardText: 'Neue Zusammenfassung.',
-      description: 'So wie es unter uns Menschen Charaktere mit eigenen Bedürfnissen gibt, gibt’s auch bei Hundenrassen solche. Die Rede ist von den sogenannten Ursprünglichen Rassen. Darunter fallen zum Beispiel American Akita, diverse Wolfhunde sowie Schlittenhunde (Husky, Alaskan Malamute, Samojede, ...), um ein paar Beispiele zu nennen.',
-      seconddescription: 'Die Eigenheit bei den meisten dieser Rassetypen liegt an dem fehlenden „will to please“ (der Wunsch dem Menschen zu gefallen). Aufgrund dessen benötigen solche Hunde sehr oft eine andere Herangehensweise an das Training, um zum gewünschten Erfolg zu kommen.'
+      cardText: 'Ursprüngliche Hunderassen verstehen lernen.',
+      description: 'Ursprüngliche Hunderassen haben aufgrund ihrer hohen Selbstständigkeit meist eine eigene Anforderung an die Erziehung und an das Training. Aufgrund dessen benötigen solche Hunde eine andere Herangehensweise, um zum gewünschten Erfolg zu kommen.',
     },
 
 
