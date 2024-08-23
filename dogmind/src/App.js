@@ -37,7 +37,6 @@ function App() {
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/agbs" element={<AGBs />} />
           <Route path="/Welpen-und-Junghundtraining" element={<WelpenJunghundTraining data={trainingData} />} />
-          <Route path="/Welpen-Gruppenkurs" element={<WelpenGruppenkurs data={trainingData} />} />
           <Route path="/Alltagstauglich" element={<Alltagstauglich data={trainingData} />} />
           <Route path="/Medical-Training" element={<MedicalTraining data={trainingData} />} />
           <Route path="/Verhaltensauffaelligkeiten" element={<Verhaltensauffaelligkeiten data={trainingData} />} />
@@ -50,7 +49,7 @@ function App() {
           <Route path="/Social-Walk" element={<SocialWalk data={trainingData} />} />
           <Route path="/Urspruengliche-Rassen" element={<Rassen data={trainingData} />} />
           <Route path="/Preisliste" element={<Preisliste />} />
-
+          <Route path="/WelpenGruppenkurs" element={<WelpenGruppenkurs data={trainingData} />} />
 
         </Routes>
         <ContactForm />

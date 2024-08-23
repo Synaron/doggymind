@@ -37,7 +37,7 @@ const trainingData = [
     },
     {
       id: 2,
-      title: 'Welpen-Gruppenkurs',
+      title: 'WelpenGruppenkurs',
       category: 'Welpen',
       imagePath: Welpe2,
       cardText: 'Sozialisierung mit Hunden, Menschen, Umgebungen, Geräuschen und vieles mehr.',

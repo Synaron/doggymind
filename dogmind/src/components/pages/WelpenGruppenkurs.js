@@ -1,9 +1,9 @@
-// WelpenGruppenkurs.js
+// Alltagstauglich.js
 
 import React from 'react';
 import HeaderImageCircle from '../HeaderImageCircle';
 import IntroSub from '../IntroSub';
-import trainingData from '../../data';
+import trainingData from '../../data'; // Make sure this import is correct
 import NavbarSub from '../NavbarSub';
 import AngeboteCards from '../AngeboteCards';
 
@@ -28,14 +28,14 @@ function WelpenGruppenkurs() {
   }
 
   return (
-    <div id="welpenGruppenkursID">
+    <div id="welpenJunghundID">
       <NavbarSub />
       <HeaderImageCircle HeaderTitle={training.title} imageUrl={training.imagePath} altText="Welpe" />
       <IntroSub
-        trainingData={[training]} // Pass an array with the second training data item
+        trainingData={[training]} // Pass an array with the third training data item
       />
       {/* Pass the category prop to AngeboteCards */}
-      <AngeboteCards trainingData={trainingData} categories={['Welpen', 'Alltag']} />
+      <AngeboteCards trainingData={trainingData} categories={['Probleme', 'Alltag']} />
     </div>
   );
 }

@@ -29,9 +29,9 @@ export const ContactForm = () => {
     <div className="background-with-overlay">
       <form ref={form} onSubmit={sendEmail} className="contact-form">
         <h1 id='kontaktformular'>Kontaktformular</h1>
-        <label>Name</label>
+        <label>Name:</label>
         <input type="text" name="from_name" className="form-input" />
-        <label>Anschrift</label>
+        <label>Anschrift:</label>
         <input type="text" name="anschrift" className="form-input" />
         <label>Telefonnummer:</label>
         <input type="text" name="telefonnummer" className="form-input" />
