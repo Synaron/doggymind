@@ -34,8 +34,6 @@ function Alltagstauglich() {
       <IntroSub
         trainingData={[training]} // Pass an array with the third training data item
       />
-      {/* Pass the category prop to AngeboteCards */}
-      <AngeboteCards trainingData={trainingData} categories={['Probleme', 'Alltag']} />
     </div>
   );
 }

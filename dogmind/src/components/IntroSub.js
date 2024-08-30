@@ -35,6 +35,11 @@ function IntroSub({ trainingData }) {
           <p id="intro-sub-note">{training.note}</p>
         </Col>
       </Row>
+      <Row>
+      <a href="/" className="text-center text-white p-3 w-100 d-block mb-0" style={{ fontSize: '1.5rem', backgroundColor: '#f6be00b3', fontWeight: 'bold' }}>
+      Zurück zur Homepage
+      </a>
+      </Row>
     </div>
   );
 }

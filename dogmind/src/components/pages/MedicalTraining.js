@@ -34,8 +34,6 @@ function MedicalTraining() {
       <IntroSub
         trainingData={[training]} // Pass an array with the fourth training data item
       />
-      {/* Pass the category prop to AngeboteCards */}
-      <AngeboteCards trainingData={trainingData} categories={['Spezialthema', 'Spezialservices']} />
     </div>
   );
 }

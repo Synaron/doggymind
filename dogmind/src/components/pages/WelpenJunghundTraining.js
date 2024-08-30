@@ -35,8 +35,6 @@ function WelpenJunghundTraining() {
       <IntroSub
         trainingData={[training]} // Pass an array with the first training data item
       />
-      {/* Pass the category prop to AngeboteCards */}
-      <AngeboteCards trainingData={trainingData} categories={['Welpen', 'Alltag']} />
     </div>
   );
 }

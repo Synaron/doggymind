@@ -1,6 +1,6 @@
 .background-with-overlay {
   /* Set the background image and create a linear gradient for the color overlay */
-  background: linear-gradient(rgb(246, 190, 0, 0.5), rgb(246, 190, 0, 0.5)), url('../images/Kontakt.png');
+  background: linear-gradient( rgba(0, 0, 0, 0.2),  rgba(0, 0, 0, 0.3)), url('../images/Kontakt.png');
 
   /* Set the size and position of the background image */
   background-size: cover;
