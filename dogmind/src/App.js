@@ -27,8 +27,8 @@ import AGBs from './components/pages/AGBs.js';
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
-        <ScrollToTop />
         <Routes>
           {/* Define routes for the home page and subpages */}
           <Route path="/" element={<Home />} />
@@ -48,7 +48,6 @@ function App() {
           <Route path="/Urspruengliche-Rassen" element={<Rassen data={trainingData} />} />
           <Route path="/Preisliste" element={<Preisliste />} />
           <Route path="/Welpen-Gruppenkurs" element={<WelpenGruppenkurs data={trainingData} />} />
-
         </Routes>
         <ContactForm />
         <Footer />

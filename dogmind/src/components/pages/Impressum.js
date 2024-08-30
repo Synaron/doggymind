@@ -1,17 +1,20 @@
 import React from 'react'
 import '../../assets/css/Contact.css';
+import NavbarSub from '../NavbarSub';
 
 function Impressum() {
   return (
-    <div id="Kontakt" className="background-with-overlay">
-    <div className="Content-Kontakt">
-      <h2 id="Kontakt">Impressum</h2>
-      <h3 style={{ fontSize: '2.5rem' }}>Doris <span style={{ color: '#F6BE00' }}>Neuhold</span></h3>
-      <h3 style={{ fontStyle: 'italic' }}>Diplomierte Hundetrainerin</h3>
-      <p className="Kontakt-Absatz" style={{ textAlign: 'left', fontSize: '1.5rem' }}>Telefon: +436608290628</p>
-      <p className="Kontakt-Absatz" style={{ textAlign: 'left', fontSize: '1.5rem' }}>Email: doris.neuhold@gmx.net </p>
+    <div>
+    <NavbarSub />
+    <div className="text-center p-3 w-100 d-block mb-0" style={{ fontSize: '3 rem' }}>
+    <h1>Impressum</h1>
+    <p>Doris Neuhold</p>
+    <p>Diplomierte Hundetrainerin</p>
+    <p>www.doggymind.at</p>
+    <p>| Mobil: 0660 123 456</p>
+    <p>Mail: office@doggymind.at</p>
     </div>
-</div>
+    </div>
   )
 }
 
