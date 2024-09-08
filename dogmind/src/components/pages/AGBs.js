@@ -7,7 +7,7 @@ function AGBs() {
     <NavbarSub />
     <div id="welpenJunghundID" className="container m-4">
       <div className="row justify-content-center">
-        <div className="col-12 col-md-10 col-lg-8">
+        <div className="col-12 col-md-10 col-lg-8" style={{ marginTop: '10rem' }}>
           <h1 className="text-center">Allgemeine Geschäftsbedingungen</h1>
           <h2>1. Zahlungsbedingungen</h2>
           <ul>
