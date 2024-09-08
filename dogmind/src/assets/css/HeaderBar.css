@@ -55,6 +55,8 @@ nav ul {
 
 nav ul li {
   margin-left: 2rem; /* Use rem for spacing */
+  margin-right: 2rem; /* Use rem for spacing */
+
 }
 
 nav ul li a {
