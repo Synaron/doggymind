@@ -7,9 +7,9 @@ import {Row} from 'react-bootstrap';
 function HeaderImageCircle({ HeaderTitle, imageUrl }) {
   return (
     <>
-    <Row id='background-header-img' className='d-flex align-items-center justify-content-center'>
+    <Row id='background-header-img' className='d-flex align-items-center justify-content-center'style={{ paddingTop: '5rem' }}>
         <Col md={6} className='d-flex align-items-center justify-content-center'>
-        <div id='header-title'>{HeaderTitle}</div>
+        <div id='header-title' style={{ paddingLeft: '10rem' }}>{HeaderTitle}</div>
         </Col>
         <Col style={{ padding: 0 }} md={6} className='d-flex align-items-center justify-content-center'>
             {/* Pass imageUrl as a prop to RoundedImage */}

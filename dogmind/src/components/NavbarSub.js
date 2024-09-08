@@ -1,30 +1,51 @@
-// NavbarSub.js
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Col, Row } from 'react-bootstrap';
+import React, { useEffect, useState } from 'react';
+import '../assets/css/HeaderBar.css';
 import LogoGelb from '../assets/images/LogoGelb.png'
-import '../assets/css/HeaderBar.css'
+import { Link } from 'react-router-dom'; // For page navigation
+import { Container, Row, Col } from 'react-bootstrap';
 
-const NavbarSub = () => {
+const NavBarSub = () => {
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setScrolling(scrollTop > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <Row className="no-gutters">
-      <Col md={3} className="logo m-0 p-0">
+    <header className={`header ${scrolling ? 'scrolling' : ''} ${scrolling ? 'transparent' : ''}`}>
+      <div className="logo-triangle">
+        <Link to="/" className="logo-link">
+          <div className="logo">
             <img src={LogoGelb} alt="Logo doggymind" />
-      </Col>
-    <Col md={9} className="m-0 p-0">
+          </div>
+        </Link>
+      </div>
+      <Container>
+        <Row className="d-flex align-items-center">
+        <Col md={9} className="m-0 p-0">
     <nav>
       <ul>
         <li>
           <Link style={{ color: '#ffffff' }} to="/">
-            Back to Home
+            Zurück zur Homepage
           </Link>
         </li>
       </ul>
     </nav>
     </Col>
-    </Row>
+        </Row>
+      </Container>
+    </header>
   );
 };
 
-export default NavbarSub;
+export default NavBarSub;
