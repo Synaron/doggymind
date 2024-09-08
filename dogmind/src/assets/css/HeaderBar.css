@@ -11,11 +11,12 @@
   z-index: 100; /* Keep header above other elements */
   padding-left: 10rem; /* Offset content to avoid overlap with triangle */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
+  transition: background-color 0.3s; /* Smooth transition for background color */
 }
 
 /* Make the header transparent when scrolling */
 .header.transparent {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6); /* Transparent background */
 }
 
 /* Container for the triangle and logo */
@@ -23,25 +24,36 @@
   position: fixed; /* Fix the triangle at the top-left corner */
   top: 0;
   left: 0;
+  width: 0;
+  height: 0;
   z-index: 99; /* Ensure it's behind the header content */
+  transition: border-top-color 0.3s; /* Smooth transition for border color */
 }
 
 /* Triangle to fill the top left corner, mirrored */
-.logo {
-  width: 0;
-  height: 0;
+.logo-triangle {
   border-top: 35vh solid black; /* Black triangle pointing upwards */
   border-right: 30vw solid transparent; /* Transparent to create the diagonal cut */
 }
 
 /* Style the logo inside the triangle */
 .logo img {
-  position: absolute;
+  position: fixed;
   top: 1vh; /* Adjust to align logo within the triangle */
   left: 1vw; /* Adjust to align logo within the triangle */
   width: 12rem; /* Adjust logo size as needed */
   height: auto;
   z-index: 100; /* Ensure logo stays above the triangle */
+  transition: opacity 0.3s; /* Smooth transition for opacity */
+}
+
+/* When the header is transparent, apply transparency to triangle and logo */
+.header.transparent .logo-triangle {
+  border-top-color: rgba(0, 0, 0, 0.6); /* Same transparency as header */
+}
+
+.header.transparent .logo img {
+  opacity: 0.6; /* Same transparency as header */
 }
 
 /* Navbar styles */
@@ -56,7 +68,6 @@ nav ul {
 nav ul li {
   margin-left: 2rem; /* Use rem for spacing */
   margin-right: 2rem; /* Use rem for spacing */
-
 }
 
 nav ul li a {
