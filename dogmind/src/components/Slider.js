@@ -6,8 +6,6 @@ import Slider3 from '../assets/images/Slider/Slider3.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/css/Slider.css';
 
-
-
 function Slider() {
   const [index, setIndex] = useState(0);
 
@@ -18,7 +16,12 @@ function Slider() {
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
-      <img className="d-block w-100" src={Slider1} alt="First slide" style={{ height: '85vh' }} />
+        <img
+          className={`d-block w-100 ${index === 0 ? 'mirror-vertical' : ''}`}
+          src={Slider1}
+          alt="First slide"
+          style={{ height: '85vh' }}
+        />
         <Carousel.Caption>
           <h3>Individualtraining</h3>
           <p>Das Hundetraining wird an eure Voraussetzungen und Wünsche angepasst.</p>
@@ -36,7 +39,7 @@ function Slider() {
         <Carousel.Caption>
           <h3>Spiel und Beschäftigung</h3>
           <p>
-          Die ideale Beschäftigung für dich und deinen Hund finden.
+            Die ideale Beschäftigung für dich und deinen Hund finden.
           </p>
         </Carousel.Caption>
       </Carousel.Item>

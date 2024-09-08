@@ -1,4 +1,10 @@
 
+.mirror-vertical {
+  transform: scaleX(-1);
+  /* Optionally, to keep the content inside correctly aligned */
+  transform-origin: center;
+}
+
 .carousel {
   height: 85vh; /* Adjust the height to complement the navbar height */
 }
