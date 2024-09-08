@@ -1,56 +1,86 @@
-/* HeaderBar.css */
-
+/* Header styles */
 .header {
-  background-color: black;
-  color: #fff;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  height: 15vh;
-}
-
-.logo {
+  background-color: black; /* Adjust background color */
+  height: 6vh; /* Slim header height */
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: black;
-  margin:0;
-  padding:0;
+  position: fixed; /* Keep header visible when scrolling */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full-width header */
+  z-index: 100; /* Keep header above other elements */
+  padding-left: 10rem; /* Offset content to avoid overlap with triangle */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
 }
 
+/* Make the header transparent when scrolling */
+.header.transparent {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Container for the triangle and logo */
+.logo-triangle {
+  position: fixed; /* Fix the triangle at the top-left corner */
+  top: 0;
+  left: 0;
+  z-index: 99; /* Ensure it's behind the header content */
+}
+
+/* Triangle to fill the top left corner, mirrored */
+.logo {
+  width: 0;
+  height: 0;
+  border-top: 35vh solid black; /* Black triangle pointing upwards */
+  border-right: 30vw solid transparent; /* Transparent to create the diagonal cut */
+}
+
+/* Style the logo inside the triangle */
 .logo img {
-  width: auto;
-  height: 15vh;
-
+  position: absolute;
+  top: 1vh; /* Adjust to align logo within the triangle */
+  left: 1vw; /* Adjust to align logo within the triangle */
+  width: 12rem; /* Adjust logo size as needed */
+  height: auto;
+  z-index: 100; /* Ensure logo stays above the triangle */
 }
 
-/* Navbar.css */
-nav {
-background-color: black;
-display: flex; /* Use flexbox to align items */
-justify-content: center; /* Align items along the main axis with space between them */
-align-items: center;
-height: 15vh; /* Adjust the height as needed */
-width:auto;
-}
-
+/* Navbar styles */
 nav ul {
-list-style-type: none; /* Remove list styling */
-display: flex; 
-margin-bottom: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-margin-right: 0rem; /* Add margin between list items */
-padding-right: 3rem;
-display:flex;
+  margin-left: 2rem; /* Use rem for spacing */
 }
 
 nav ul li a {
-text-decoration: none; /* Remove underline */
-color: white; /* Set link color to white */
-font-family: 'Anton', sans-serif;
-font-size: 1.3rem;
-cursor: url('../images/Pfoten/paw_white.png') 12 12, auto;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem; /* Responsive font size */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header {
+    height: auto;
+    padding-left: 0;
+  }
+
+  .logo-triangle {
+    display: none; /* Hide the triangle and logo on mobile if necessary */
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
 }

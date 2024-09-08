@@ -23,12 +23,14 @@ const HeaderBar = () => {
 
   return (
     <header className={`header ${scrolling ? 'scrolling' : ''} ${scrolling ? 'transparent' : ''}`}>
+      <div className="logo-triangle">
+        <div className="logo">
+          <img src={LogoGelb} alt="Logo doggymind" />
+        </div>
+      </div>
       <Container>
         <Row className="d-flex align-items-center">
-          <Col md={3} className="logo">
-          <img src={LogoGelb} alt="Logo doggymind" />
-          </Col>
-          <Col md={9}>
+          <Col>
             <nav>
               <ul>
                 <li>

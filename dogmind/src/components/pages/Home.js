@@ -42,9 +42,9 @@ function Home() {
         <Slider />
         <ScrollLink to="Intro2" smooth={true} duration={0} offset={-50}>
         <Intro2
-          firstWord="Doggy"
-          secondWord="mind"
-          secondPhrase="– mind my dog"
+          firstWord="Mind your"
+          secondWord="dog"
+          secondPhrase="your mind"
           firstParagraph="Die Hundesprache verstehen und deuten zu können, ist wie eine neue Fremdsprache zu lernen. Nur durch viel Übung und Anwendung ist sie zu meistern. Wir helfen dir und deinem besten Freund, eure Kommunikation und somit eure Bindung zu stärken."
           secondParagraph="Im individuellen Einzeltraining konzentrieren wir uns nur auf dich und deinen Hund. Dadurch könnt ihr gemeinsam effektiv und intensiv an euren Zielen arbeiten. So einzigartig wie jeder Mensch und jeder Hund ist, so einzigartig ist auch der Trainingsansatz. Gemeinsam finden wir den passenden Weg für euch." 
           image1={IntroPic1}
