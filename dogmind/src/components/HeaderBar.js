@@ -40,7 +40,7 @@ const HeaderBar = () => {
                 </li>
                 <li>
                   <ScrollLink style={{ color: '#ffffff' }} to="Probleme" smooth={true} duration={500}>
-                    Häufige Probleme
+                    Häufige Themen
                   </ScrollLink>
                 </li>
                 <li>
